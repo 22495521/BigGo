@@ -25,17 +25,21 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ps-3">
             <Router-Link
-              class="nav-link fw-normal text-dark fs-6"
+              class="nav-link fw-bolder text-dark fs-6"
               aria-current="page"
               to="/FrontPage"
               >首頁</Router-Link
             >
           </li>
           <li class="nav-item ps-3">
-            <a class="nav-link fw-normal text-dark fs-6" href="#">課程總覽</a>
+            <a class="nav-link fw-normal text-dark fs-6 fw-bolder" href="#"
+              >課程總覽</a
+            >
           </li>
           <li class="nav-item ps-3">
-            <a class="nav-link fw-normal text-dark fs-6" href="#">問與答</a>
+            <a class="nav-link fw-normal text-dark fs-6 fw-bolder" href="#"
+              >問與答</a
+            >
           </li>
           <li class="nav-item ps-3">
             <a href="#">
