@@ -5,10 +5,10 @@
       <div class="col-1 d-md-none"></div>
       <div class="col-10 col-md-12">
         <div class="d-flex flex-column flex-md-row">
-          <div>
+          <div class="img-bord">
             <img
               src="../../assets/image/首頁/Section_04_img01.jpg"
-              class="img-fluid img-border"
+              class="img-fluidinfo img-border"
               alt=""
             />
           </div>
@@ -38,10 +38,10 @@
       <div class="col-1 d-md-none"></div>
       <div class="col-10 col-md-12">
         <div class="d-flex flex-column flex-md-row-reverse">
-          <div>
+          <div class="img-bord">
             <img
               src="../../assets/image/首頁/Section_04_img02.jpg"
-              class="img-fluid img-border"
+              class="img-fluidinfo img-border"
               alt=""
             />
           </div>
@@ -64,10 +64,10 @@
       <div class="col-1 d-md-none"></div>
       <div class="col-10 col-md-12">
         <div class="d-flex flex-column flex-md-row">
-          <div>
+          <div class="img-bord">
             <img
               src="../../assets/image/首頁/Section_04_img03.jpg"
-              class="img-fluid img-border"
+              class="img-fluidinfo img-border"
               alt=""
             />
           </div>
@@ -92,11 +92,22 @@
 .border {
   border: 1px solid #0000;
 }
-
-
+.img-fluidinfo {
+  width: 100%;
+}
+.img-bord {
+  width: 50%;
+}
 @media screen and (max-width: 768px) {
   .img-border {
     border-radius: 32px;
+  }
+  .img-fluidinfo {
+    width: 100%;
+    height: auto;
+  }
+  .img-bord {
+    width: 100%;
   }
 }
 </style>
