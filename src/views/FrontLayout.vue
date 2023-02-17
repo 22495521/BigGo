@@ -116,7 +116,6 @@ export default {
     RouterView,
     RouterLink,
   },
-
 };
 </script>
 
