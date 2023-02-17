@@ -1,7 +1,5 @@
 <template>
-  <nav
-    class="navbar navbar-expand-md navbar-light bg-primary px-2 overflow-hidden"
-  >
+  <nav class="navbar navbar-expand-md navbar-light bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img
@@ -23,7 +21,11 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText" ref="navbarText">
+      <div
+        class="collapse navbar-collapse pe-1"
+        id="navbarText"
+        ref="navbarText"
+      >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ps-3">
             <Router-Link
