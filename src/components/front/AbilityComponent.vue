@@ -1,5 +1,5 @@
 <template>
-  <p class="mb-0 fw-bold fs-2 text-center pt-5">圍棋提升的多維能力</p>
+  <p class="mb-0 fw-bold fs-2 text-center py-4">圍棋提升的多維能力</p>
   <div class="container px-2 px-md-0 d-flex flex-column overflow-hidden">
     <div class="d-md-flex">
       <div class="card-w">
