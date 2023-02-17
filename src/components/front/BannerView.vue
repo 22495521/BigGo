@@ -1,17 +1,22 @@
 <template>
-  <div class="banner d-flex justify-content-center align-items-center">
-    <p class="banner-text">
-      <img
-        class="d-none d-md-inline-block slippery-slide"
-        height="173px"
-        width="138px"
-        src="../../assets/image/首頁/Section_01_slide.svg"
-        alt="slippery-slide"
-      /><span class="mark-pen text-start">樂在棋中，</span><br />
-      <span class="mark-pen text-md-center"
-        >打造孩子的圍<br class="d-block d-md-none" />棋遊樂場。</span
-      >
-    </p>
+  <div
+    class="banner d-flex flex-column justify-content-center align-items-center"
+  >
+    <div>
+      <div class="banner-text text-start">
+        <img
+          src="../../assets/image/首頁/Section_01_slide.svg"
+          class="d-none d-md-inline-block"
+          alt="slide"
+        />
+        <span class="mark-pen align-bottom ms-md-3">樂在棋中，</span>
+      </div>
+      <div>
+        <span class="banner-text mark-pen"
+          >打造孩子的圍<br class="d-md-none" />棋遊樂場。</span
+        >
+      </div>
+    </div>
   </div>
 </template>
 
@@ -29,7 +34,6 @@
   font-weight: 700;
   font-size: 64px;
   color: white;
-  line-height: 0%;
 }
 .mark-pen {
   padding-left: 0.5rem;
@@ -40,13 +44,5 @@
   .banner {
     background: url("../../assets/image/首頁/Section_01_mobile.jpg");
   }
-  .banner-text {
-    line-height: 150%;
-  }
-}
-
-.slippery-slide {
-  margin-bottom: 4%;
-  margin-right: 2%;
 }
 </style>
