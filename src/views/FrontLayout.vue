@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div
-        class="collapse navbar-collapse pe-1"
+        class="collapse navbar-collapse pe-3"
         id="navbarText"
         ref="navbarText"
       >
