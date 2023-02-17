@@ -1,5 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light bg-primary px-2">
+  <nav
+    class="navbar navbar-expand-md navbar-light bg-primary px-2 overflow-hidden"
+  >
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img
