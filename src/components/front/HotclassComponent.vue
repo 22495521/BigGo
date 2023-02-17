@@ -54,7 +54,7 @@
           />
           <div class="card-body pb-0 text-nowrap">
             <div class="d-flex pb-0">
-              <h4 class="card-title lh-1" style="font-weight: 700">入門</h4>
+              <h4 class="card-title lh-1" style="font-weight: 700">初級Ａ</h4>
               <div class="ms-auto fs-6 text-decoration-line-through pb-0">
                 <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">
                   NT$ 3000
@@ -94,7 +94,7 @@
           />
           <div class="card-body pb-0 text-nowrap">
             <div class="d-flex pb-0">
-              <h4 class="card-title lh-1" style="font-weight: 700">入門</h4>
+              <h4 class="card-title lh-1" style="font-weight: 700">初級Ｂ</h4>
               <div class="ms-auto fs-6 text-decoration-line-through pb-0">
                 <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">
                   NT$ 3000

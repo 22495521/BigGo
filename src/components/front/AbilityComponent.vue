@@ -27,9 +27,9 @@
         />
       </div>
       <div class="pt-3 d-md-flex flex-md-column justify-content-center card-w">
-        <h4>集中專注力</h4>
+        <h4>獨立思考</h4>
         <p class="fs-4">
-          下一盤圍棋大約30分鐘至1小時，須全程集中精神、不可鬆懈。
+          每一盤棋都有可能面臨困難的境地，需要學會不依賴任何人做出決定。
         </p>
       </div>
     </div>

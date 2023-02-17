@@ -128,9 +128,13 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&family=Noto+Sans:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 
 .noto-sens {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+p a h1 h2 h3 h4 h5 span {
+  font-family: sans-serif;
 }
 </style>
