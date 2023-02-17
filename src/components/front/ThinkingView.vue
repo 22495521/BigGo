@@ -2,7 +2,7 @@
   <div class="bg-secondary">
     <div class="container">
       <div class="row justify-content-center pt-6 pt-md-4">
-        <div class="fs-2 text-center fw-bolder mb-md-1">
+        <div class="fs-2 text-center fw-bold mb-md-1">
           線上從0開始打造圍<br class="d-md-none" />棋思維
         </div>
         <div class="col-md-10">
