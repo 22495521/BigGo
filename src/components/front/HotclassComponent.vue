@@ -1,8 +1,10 @@
 <template>
   <div class="bg-info">
     <p class="mb-0 fw-bold fs-2 text-center pt-5">熱門課程</p>
-    <div class="d-flex flex-column flex-md-row container">
-      <div class="col-md-4 px-2 py-4">
+    <div
+      class="d-flex flex-column flex-md-row container justify-content-md-center align-items-center"
+    >
+      <div class="col-md-4 col-lg-3 col-10 px-2 py-4">
         <div
           class="card p-3"
           style="width: 100%; border-radius: 20px; border: 3px solid #6f6f6f"
@@ -23,7 +25,7 @@
             </div>
 
             <div class="card-text d-flex">
-              <p>適合：零基礎</p>
+              <p>適合:零基礎</p>
               <p class="ms-auto">NT$ 2500</p>
             </div>
             <div class="d-flex justify-content-center text-nowrap">
@@ -42,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 px-2 py-4">
+      <div class="col-md-4 col-lg-3 col-10 px-2 py-4">
         <div
           class="card p-3"
           style="width: 100%; border-radius: 20px; border: 3px solid #6f6f6f"
@@ -54,7 +56,7 @@
           />
           <div class="card-body pb-0 text-nowrap">
             <div class="d-flex pb-0">
-              <h4 class="card-title lh-1" style="font-weight: 700">初級Ａ</h4>
+              <h4 class="card-title lh-1" style="font-weight: 700">初級A</h4>
               <div class="ms-auto fs-6 text-decoration-line-through pb-0">
                 <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">
                   NT$ 3000
@@ -63,7 +65,7 @@
             </div>
 
             <div class="card-text d-flex">
-              <p>適合：零基礎</p>
+              <p>適合:零基礎</p>
               <p class="ms-auto">NT$ 2500</p>
             </div>
             <div class="d-flex justify-content-center text-nowrap">
@@ -82,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 px-2 py-4">
+      <div class="col-md-4 col-lg-3 col-10 px-2 py-4">
         <div
           class="card p-3"
           style="width: 100%; border-radius: 20px; border: 3px solid #6f6f6f"
@@ -94,7 +96,7 @@
           />
           <div class="card-body pb-0 text-nowrap">
             <div class="d-flex pb-0">
-              <h4 class="card-title lh-1" style="font-weight: 700">初級Ｂ</h4>
+              <h4 class="card-title lh-1" style="font-weight: 700">初級B</h4>
               <div class="ms-auto fs-6 text-decoration-line-through pb-0">
                 <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">
                   NT$ 3000
@@ -103,7 +105,7 @@
             </div>
 
             <div class="card-text d-flex">
-              <p>適合：零基礎</p>
+              <p>適合:零基礎</p>
               <p class="ms-auto">NT$ 2500</p>
             </div>
             <div class="d-flex justify-content-center text-nowrap">
