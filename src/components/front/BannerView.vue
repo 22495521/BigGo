@@ -28,6 +28,7 @@
 .banner {
   background: url("../../assets/image/首頁/Section_01_web.jpg");
   height: 90vh;
+  background-repeat: no-repeat;
 }
 .banner-text {
   font-family: "Noto Sans", sans-serif;
