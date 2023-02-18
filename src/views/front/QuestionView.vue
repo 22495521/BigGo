@@ -199,7 +199,7 @@
 }
 .img-left img,
 .img-right img {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 /* desktops */
