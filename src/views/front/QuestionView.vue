@@ -157,7 +157,7 @@
 }
 @media screen and (max-width: 768px) {
   .accordion-w {
-    width: 100%;
+    width: 90%;
   }
 }
 </style>
