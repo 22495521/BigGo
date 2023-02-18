@@ -21,11 +21,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse pe-3"
-        id="navbarText"
-        ref="navbarText"
-      >
+      <div class="collapse navbar-collapse pe-3" id="navbarText" ref="navbarText">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ps-3">
             <Router-Link
@@ -59,7 +55,7 @@
                 src="../assets/image/header/shopping_cart.svg"
                 width="25px"
                 height="25px"
-                alt=""
+                alt="123"
               />
             </a>
           </li>
@@ -139,9 +135,5 @@ export default {
 
 .noto-sens {
   font-family: "Noto Sans TC", sans-serif;
-}
-
-p a h1 h2 h3 h4 h5 span {
-  font-family: sans-serif;
 }
 </style>

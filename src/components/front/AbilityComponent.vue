@@ -10,9 +10,11 @@
         />
       </div>
       <div class="pt-3 d-md-flex flex-md-column justify-content-center card-w">
-        <div class="px-md-4">
+        <div class="px-md-4 py-3 py-md-0">
           <h4>集中專注力</h4>
-          <p class="fs-4">下一盤圍棋大約30分鐘至1小時，須全程集中精神、不可鬆懈。</p>
+          <p class="fs-4 py-2 py-md-0">
+            下一盤圍棋大約30分鐘至1小時,須全程集中精神、不可鬆懈。
+          </p>
         </div>
       </div>
     </div>
@@ -25,9 +27,11 @@
         />
       </div>
       <div class="pt-3 d-md-flex flex-md-column justify-content-center card-w">
-        <div class="px-md-4">
+        <div class="px-md-4 py-3 py-md-0">
           <h4>獨立思考</h4>
-          <p class="fs-4">下一盤圍棋大約30分鐘至1小時，須全程集中精神、不可鬆懈。</p>
+          <p class="fs-4 py-2 py-md-0">
+            下一盤圍棋大約30分鐘至1小時，須全程集中精神、不可鬆懈。
+          </p>
         </div>
       </div>
     </div>
@@ -40,9 +44,11 @@
         />
       </div>
       <div class="pt-3 d-md-flex flex-md-column justify-content-center card-w">
-        <div class="px-md-4">
-          <h4>集中專注力</h4>
-          <p class="fs-4">下一盤圍棋大約30分鐘至1小時，須全程集中精神、不可鬆懈。</p>
+        <div class="px-md-4 py-3 py-md-0">
+          <h4>抗壓能力</h4>
+          <p class="fs-4 py-2 py-md-0">
+            人都會有勝負心，圍棋可以訓練如何勇敢面對失敗時的挫折感。
+          </p>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@
                   src="../../assets/image/首頁/Section_02_illustration01.svg"
                   alt=""
                 />
-                <p class="fs-4 mt-3">
+                <p class="fs-4 mt-3 fw-normal">
                   從啟蒙到段位<br class="d-md-block d-none" />循序漸進
                 </p>
               </div>
@@ -30,7 +30,7 @@
                   src="../../assets/image/首頁/Section_02_illustration02.svg"
                   alt=""
                 />
-                <p class="fs-4 mt-3">
+                <p class="fs-4 mt-3 fw-normal">
                   把枯燥變成有<br class="d-md-block d-none" />趣的教學方式
                 </p>
               </div>
@@ -44,7 +44,7 @@
                   src="../../assets/image/首頁/Section_02_illustration03.svg"
                   alt=""
                 />
-                <p class="fs-4 mt-3">
+                <p class="fs-4 mt-3 fw-normal">
                   超過一百位學<br class="d-md-block d-none" />員成功晉段
                 </p>
               </div>

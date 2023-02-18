@@ -1,10 +1,10 @@
 <template>
   <div class="container d-flex flex-column align-items-center">
     <div class="pt-5 pb-4">
-      <h2>問與答</h2>
+      <h2 style="font-weight: 700">問與答</h2>
     </div>
-    <div class="accordion pb-5" id="accordionExample" style="width: 90%">
-      <div class="mb-4 shadow">
+    <div class="accordion pb-5" id="accordionExample" style="width: 80%">
+      <div class="mb-4 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
@@ -15,7 +15,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              如何開始上課呢?
+              <span class="fs-5 fw-bolder">如何開始上課呢?</span>
             </button>
           </h2>
           <div
@@ -24,12 +24,14 @@
             aria-labelledby="headingOne"
           >
             <div class="accordion-body">
-              購買課程後，課程連結傳到您的信箱內，點擊網址就可以開始上課囉!
+              <span class="fs-5 fw-normal"
+                >購買課程後，課程連結傳到您的信箱內，點擊網址就可以開始上課囉!</span
+              >
             </div>
           </div>
         </div>
       </div>
-      <div class="mb-4 shadow">
+      <div class="mb-4 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button
@@ -40,7 +42,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              購買的課程有觀看次數或有效期限嗎?
+              <span class="fs-5 fw-bolder">購買的課程有觀看次數或有效期限嗎?</span>
             </button>
           </h2>
           <div
@@ -48,11 +50,13 @@
             class="accordion-collapse collapse"
             aria-labelledby="headingTwo"
           >
-            <div class="accordion-body">課程皆是無限次觀看，無期限。</div>
+            <div class="accordion-body">
+              <span class="fs-5 fw-normal">課程皆是無限次觀看，無期限。</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="mb-4 shadow">
+      <div class="mb-4 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button
@@ -63,7 +67,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              我的孩子適合哪一門課程呢?
+              <span class="fs-5 fw-bolder">我的孩子適合哪一門課程呢?</span>
             </button>
           </h2>
           <div
@@ -72,12 +76,14 @@
             aria-labelledby="headingThree"
           >
             <div class="accordion-body">
-              課程詳情皆有附上適用程度和課程大綱，若不清楚可連絡專人為您服務。
+              <span class="fs-5 fw-normal"
+                >課程詳情皆有附上適用程度和課程大綱，若不清楚可連絡專人為您服務。</span
+              >
             </div>
           </div>
         </div>
       </div>
-      <div class="mb-4 shadow">
+      <div class="mb-4 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button
@@ -88,7 +94,7 @@
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              購買課程後可以退費嗎?
+              <span class="fs-5 fw-bolder">購買課程後可以退費嗎?</span>
             </button>
           </h2>
           <div
@@ -97,12 +103,14 @@
             aria-labelledby="headingFour"
           >
             <div class="accordion-body">
-              尚未點擊課程者，在七天內皆可聯絡客服全額退費。
+              <span class="fs-5 fw-normal"
+                >尚未點擊課程者，在七天內皆可聯絡客服全額退費。</span
+              >
             </div>
           </div>
         </div>
       </div>
-      <div class="mb-4 shadow">
+      <div class="mb-4 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button
@@ -113,7 +121,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              幾歲可以開始學圍棋?
+              <span class="fs-5 fw-bolder">幾歲可以開始學圍棋?</span>
             </button>
           </h2>
           <div
@@ -122,7 +130,9 @@
             aria-labelledby="headingFive"
           >
             <div class="accordion-body">
-              建議年滿4歲以上的孩子，這階段正是培養孩子大腦發育最佳時刻。
+              <span class="fs-5 fw-normal"
+                >建議年滿4歲以上的孩子，這階段正是培養孩子大腦發育最佳時刻。</span
+              >
             </div>
           </div>
         </div>
