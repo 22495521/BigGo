@@ -199,23 +199,29 @@
 }
 .img-left img,
 .img-right img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 /* desktops */
+@media (max-width: 1440px) {
+  .img-left img,
+  .img-right img {
+    max-width: 60%;
+  }
+}
 @media (max-width: 1024px) {
   .img-left img,
   .img-right img {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 @media (max-width: 920px) {
   .img-right {
-    right: 15%;
+    right: 10%;
   }
   .img-left img,
   .img-right img {
-    max-width: 35%;
+    max-width: 40%;
   }
 }
 /* tablets */
