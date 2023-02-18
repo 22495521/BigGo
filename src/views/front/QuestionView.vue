@@ -3,7 +3,7 @@
     <div class="pt-5 pb-4">
       <h2 style="font-weight: 700">問與答</h2>
     </div>
-    <div class="accordion pb-5" id="accordionExample" style="width: 60%">
+    <div class="accordion pb-5" id="accordionExample">
       <div class="mb-4 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -150,5 +150,14 @@
 .accordion-button:focus {
   box-shadow: none;
   color: none;
+}
+
+.accordion-w {
+  width: 60%;
+}
+@media screen and (min-width: 768px) {
+  .accordion-w {
+    width: 90%;
+  }
 }
 </style>
