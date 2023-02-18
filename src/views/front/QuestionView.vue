@@ -144,14 +144,16 @@
     <div class="img-left pb-0">
       <img src="../../assets/image/問與答/Section_01_illustration_left.svg" alt="" />
     </div>
-    <div class="d-flex justify-content-center flex-column align-items-center pb-5">
+    <div
+      class="d-flex justify-content-center flex-column align-items-center pb-md-5 pb-3"
+    >
       <div>
         <p class="fs-1 fw-bold lh-1">找不到答案？</p>
       </div>
       <div>
         <button
           class="btn btn-success rounded-pill"
-          style="width: 51; width: 195px; padding: 12px 32px"
+          style="width: 25; width: 150px; padding: 10px 32px"
         >
           聯絡我們
         </button>
@@ -159,6 +161,9 @@
     </div>
     <div class="img-right pb-0">
       <img src="../../assets/image/問與答/Section_01_illustration_right.svg" alt="" />
+    </div>
+    <div class="img-all">
+      <img src="../../assets/image/問與答/Section_01_illustration_all.svg" alt="" />
     </div>
   </div>
 </template>
@@ -181,6 +186,9 @@
   .accordion-w {
     width: 90%;
   }
+}
+.img-all {
+  display: none;
 }
 .img-left {
   position: absolute;
@@ -229,6 +237,14 @@
   .img-left,
   .img-right {
     display: none;
+  }
+  .img-all {
+    display: block;
+  }
+  .img-all img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
   }
 }
 </style>
