@@ -1,15 +1,19 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-light bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <Router-Link
+        class="nav-link fw-bolder text-dark fs-6"
+        aria-current="page"
+        to="/FrontPage"
+      >
         <img
           src="../assets/image/header/Logo.svg"
           alt=""
           width="226"
           height="41"
           class="d-inline-block align-text-top"
-        />
-      </a>
+      /></Router-Link>
+
       <button
         class="navbar-toggler"
         type="button"
