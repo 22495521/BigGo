@@ -110,7 +110,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-4 shadow-sm rounded-3">
+      <div class="mb-3 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button
@@ -146,7 +146,7 @@
     </div>
     <div class="d-flex justify-content-center flex-column align-items-center pb-5">
       <div>
-        <p class="fs-1 fw-normal lh-1">找不到答案？</p>
+        <p class="fs-1 fw-bold lh-1">找不到答案？</p>
       </div>
       <div>
         <button
@@ -160,11 +160,6 @@
     <div class="img-right pb-0">
       <img src="../../assets/image/問與答/Section_01_illustration_right.svg" alt="" />
     </div>
-    <!-- <img
-      src="../../assets/image/問與答/Section_01_illustration_right.svg"
-      class="img-fluid"
-      alt=""
-    /> -->
   </div>
 </template>
 <script></script>
@@ -216,7 +211,7 @@
 }
 @media (max-width: 920px) {
   .img-right {
-    right: 10%;
+    right: 15%;
   }
   .img-left img,
   .img-right img {
