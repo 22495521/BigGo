@@ -3,7 +3,7 @@
     <div class="pt-5 pb-4">
       <h2 style="font-weight: 700">問與答</h2>
     </div>
-    <div class="accordion pb-5" id="accordionExample" style="width: 80%">
+    <div class="accordion pb-5" id="accordionExample" style="width: 60%">
       <div class="mb-4 shadow-sm rounded-3">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
