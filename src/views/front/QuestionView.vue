@@ -4,7 +4,7 @@
       <h2>問與答</h2>
     </div>
     <div class="accordion pb-5" id="accordionExample" style="width: 90%">
-      <div class="mb-4 accordion-border">
+      <div class="mb-4 shadow">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-4 accordion-border">
+      <div class="mb-4 shadow">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-4 accordion-border">
+      <div class="mb-4 shadow">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-4 accordion-border">
+      <div class="mb-4 shadow">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button
@@ -102,7 +102,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-4 accordion-border">
+      <div class="mb-4 shadow">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button
@@ -134,7 +134,11 @@
 
 <style>
 .accordion-border {
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.25));
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  color: none;
 }
 </style>
