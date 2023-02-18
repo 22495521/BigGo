@@ -148,7 +148,7 @@
       class="d-flex justify-content-center flex-column align-items-center pb-md-5 pb-3"
     >
       <div>
-        <p class="fs-1 fw-bold lh-1">找不到答案？</p>
+        <p class="fs-1 fw-bold lh-1 mb-md-4">找不到答案？</p>
       </div>
       <div>
         <button
