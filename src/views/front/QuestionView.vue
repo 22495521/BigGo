@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-flex flex-column align-items-center">
+  <div class="container d-flex flex-column align-items-center pb-0">
     <div class="pt-5 pb-4">
       <h2 style="font-weight: 700">問與答</h2>
     </div>
@@ -139,6 +139,33 @@
       </div>
     </div>
   </div>
+
+  <div style="position: relative">
+    <div class="img-left pb-0">
+      <img src="../../assets/image/問與答/Section_01_illustration_left.svg" alt="" />
+    </div>
+    <div class="d-flex justify-content-center flex-column align-items-center pb-5">
+      <div>
+        <p class="fs-1 fw-normal lh-1">找不到答案？</p>
+      </div>
+      <div>
+        <button
+          class="btn btn-success rounded-pill"
+          style="width: 51; width: 195px; padding: 12px 32px"
+        >
+          聯絡我們
+        </button>
+      </div>
+    </div>
+    <div class="img-right pb-0">
+      <img src="../../assets/image/問與答/Section_01_illustration_right.svg" alt="" />
+    </div>
+    <!-- <img
+      src="../../assets/image/問與答/Section_01_illustration_right.svg"
+      class="img-fluid"
+      alt=""
+    /> -->
+  </div>
 </template>
 <script></script>
 
@@ -158,6 +185,49 @@
 @media screen and (max-width: 768px) {
   .accordion-w {
     width: 90%;
+  }
+}
+.img-left {
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+}
+.img-left,
+.img-right {
+  position: absolute;
+  bottom: 0px;
+}
+.img-right {
+  position: absolute;
+  bottom: 0px;
+  right: 15%;
+}
+.img-left img,
+.img-right img {
+  max-width: 60%;
+}
+
+/* desktops */
+@media (max-width: 1024px) {
+  .img-left img,
+  .img-right img {
+    max-width: 40%;
+  }
+}
+@media (max-width: 920px) {
+  .img-right {
+    right: 10%;
+  }
+  .img-left img,
+  .img-right img {
+    max-width: 35%;
+  }
+}
+/* tablets */
+@media (max-width: 768px) {
+  .img-left,
+  .img-right {
+    display: none;
   }
 }
 </style>
