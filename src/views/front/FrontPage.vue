@@ -1,7 +1,7 @@
 <template>
   <Banner-View></Banner-View>
-  <ThinkingView></ThinkingView>
-  <GoodratingView></GoodratingView>
+  <Thinking-View></Thinking-View>
+  <Goodrating-View></Goodrating-View>
   <Ability-Component></Ability-Component>
   <Hotclass-Component></Hotclass-Component>
 </template>

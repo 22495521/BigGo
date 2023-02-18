@@ -36,13 +36,20 @@
             >
           </li>
           <li class="nav-item ps-3">
-            <a class="nav-link fw-normal text-dark fs-6 fw-bolder" href="#"
-              >課程總覽</a
+            <Router-Link
+              class="nav-link fw-bolder text-dark fs-6"
+              aria-current="page"
+              to="/Classlist"
+              >課程總覽</Router-Link
             >
           </li>
+
           <li class="nav-item ps-3">
-            <a class="nav-link fw-normal text-dark fs-6 fw-bolder" href="#"
-              >問與答</a
+            <Router-Link
+              class="nav-link fw-bolder text-dark fs-6"
+              aria-current="page"
+              to="/Quesiton"
+              >問與答</Router-Link
             >
           </li>
           <li class="nav-item ps-3">

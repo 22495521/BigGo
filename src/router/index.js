@@ -12,6 +12,14 @@ const router = createRouter({
           path: "FrontPage",
           component: () => import("../views/front/FrontPage.vue"),
         },
+        {
+          path: "Classlist",
+          component: () => import("../views/front/ClasslistView.vue"),
+        },
+        {
+          path: "Quesiton",
+          component: () => import("../views/front/QuestionView.vue"),
+        },
       ],
     },
   ],

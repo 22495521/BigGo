@@ -4,7 +4,7 @@
     <div
       class="d-flex flex-column flex-md-row container justify-content-md-center align-items-center"
     >
-      <div class="col-md-4 col-lg-3 col-10 px-2 py-4">
+      <div class="col-md-4 col-lg-4 col-xl-3 col-10 px-2 py-4">
         <div
           class="card p-3"
           style="width: 100%; border-radius: 20px; border: 3px solid #6f6f6f"
@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-3 col-10 px-2 py-4">
+      <div class="col-md-4 col-lg-4 col-xl-3 col-10 px-2 py-4">
         <div
           class="card p-3"
           style="width: 100%; border-radius: 20px; border: 3px solid #6f6f6f"
@@ -84,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-lg-3 col-10 px-2 py-4">
+      <div class="col-md-4 col-lg-4 col-xl-3 col-10 px-2 py-4">
         <div
           class="card p-3"
           style="width: 100%; border-radius: 20px; border: 3px solid #6f6f6f"
