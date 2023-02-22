@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="banner d-flex flex-column justify-content-center align-items-center"
-  >
+  <div class="banner d-flex flex-column justify-content-center align-items-center">
     <div>
       <div class="banner-text text-start">
         <img
@@ -27,7 +25,7 @@
 
 .banner {
   background: url("../../assets/image/首頁/Section_01_web.jpg");
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
 }
 .banner-text {
