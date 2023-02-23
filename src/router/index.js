@@ -22,6 +22,24 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/admin",
+      component: () => import("../views/AdimnLayout.vue"),
+      children: [
+        {
+          path: "course",
+          component: () => import("../views/admin/CourseAdmin.vue"),
+        },
+        {
+          path: "order",
+          component: () => import("../views/admin/OrderAdmin.vue"),
+        },
+      ],
+    },
+    {
+      path: "/login",
+      component: () => import("../views/front/LoginView.vue"),
+    },
   ],
 });
 

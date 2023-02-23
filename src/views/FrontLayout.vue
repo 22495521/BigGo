@@ -1,4 +1,18 @@
 <template>
+  <!-- <loading
+    v-model:active="isLoading"
+    :can-cancel="false"
+    :on-cancel="onCancel"
+    :is-full-page="fullPage"
+  >
+    <div class="loadingio-spinner-dual-ball-laqyobj2qgl">
+      <div class="ldio-sh19xg6jfo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </loading> -->
   <nav class="navbar navbar-expand-md navbar-light bg-primary">
     <div class="container-fluid">
       <Router-Link
@@ -25,7 +39,11 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse pe-3" id="navbarText" ref="navbarText">
+      <div
+        class="collapse navbar-collapse pe-3"
+        id="navbarText"
+        ref="navbarText"
+      >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ps-3">
             <Router-Link
@@ -113,11 +131,12 @@
     </div>
     <div class="mt-6 mt-md-5 text-center pb-4 pb-md-2">
       <p class="mb-0">
-        僅作練習使用，無任何商業用途 |<a
-          href="#"
-          class="link-dark text-decoration-none"
-          style=""
-          >後台登入</a
+        僅作練習使用，無任何商業用途 |
+        <Router-Link
+          class="nav-link text-dark fs-6 d-inline"
+          aria-current="page"
+          to="login"
+          >登入後台</Router-Link
         >
       </p>
       <p>Copyright © 2023 大圍棋教室</p>
@@ -126,18 +145,31 @@
 </template>
 <script>
 import { RouterView, RouterLink } from "vue-router";
+// import Loading from "vue-loading-overlay";
+// import "vue-loading-overlay/dist/css/index.css";
 export default {
   components: {
     RouterView,
     RouterLink,
+    // Loading,
+  },
+  data() {
+    return {
+      fullPage: true,
+      isLoading: false,
+    };
+  },
+  methods: {
+    // doAjax() {
+    //   this.isLoading = true;
+    //   // simulate AJAX
+    //   setTimeout(() => {
+    //     this.isLoading = false;
+    //   }, 2000);
+    // },
+  },
+  mounted() {
+    // this.doAjax();
   },
 };
 </script>
-
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
-
-.noto-sens {
-  font-family: "Noto Sans TC", sans-serif;
-}
-</style>
