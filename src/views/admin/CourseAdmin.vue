@@ -113,17 +113,19 @@
       </nav>
     </div>
   </div>
-
+  <Coursedel-Check ref="delModal" @getData="getData"></Coursedel-Check>
   <Course-Alert ref="courseModal" @getData="getData"></Course-Alert>
 </template>
 
 <script>
 import CourseAlert from "../../components/admin/CourseAlert.vue";
+import CoursedelCheck from "../../components/admin/DelCheck.vue";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/css/index.css";
 export default {
   components: {
     CourseAlert,
+    CoursedelCheck,
     Loading,
   },
   data() {
@@ -168,15 +170,8 @@ export default {
       this.$refs.courseModal.openModal();
     },
     daleteCourse(id) {
-      this.$http
-        .delete(`${this.url}/api/${this.path}/admin/product/${id}`)
-        .then((res) => {
-          this.getData();
-          console.log(res);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      this.$refs.delModal.isorder = 0;
+      this.$refs.delModal.openModal(id);
     },
     clickpage(page) {
       this.Nowpage = page;

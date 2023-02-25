@@ -1,18 +1,19 @@
 <template>
   <div
-    id="OrderModal"
-    ref="OrderModal"
+    id="CourseModal"
+    ref="CourseModal"
     class="modal fade"
     tabindex="-1"
-    aria-labelledby="OrderModalLabel"
+    aria-labelledby="CourseModalLabel"
     aria-hidden="true"
     data-bs-backdrop="static"
   >
     <div class="modal-dialog modal-xl">
       <div class="modal-content border-0">
         <div class="modal-header bg-dark text-white">
-          <h5 id="OrderModalLabel" class="modal-title">
-            <span>課程編輯</span>
+          <h5 id="CourseModalLabel" class="modal-title">
+            <span v-if="subcontorl">課程編輯</span>
+            <span v-else>新增課程</span>
           </h5>
           <button
             type="button"
@@ -265,7 +266,7 @@
                 />
               </div>
             </div>
-            <div class="form-check text-center">
+            <div class="form-check text-center mt-1 mb-1">
               <input
                 id="is_enabled"
                 class="form-check-input"
@@ -287,7 +288,7 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer justify-content-center">
+        <div class="modal-footer justify-content-center py-3">
           <button
             type="button"
             class="btn btn-lg"
@@ -348,7 +349,7 @@ export default {
           console.log(error);
         });
     },
-    isaddCourse(){
+    isaddCourse() {
       this.subcontorl = 0;
     },
     iseditCourse() {
@@ -411,7 +412,7 @@ export default {
     this.path = import.meta.env.VITE_APIPATH;
   },
   mounted() {
-    const myModal = new Modal(this.$refs.OrderModal);
+    const myModal = new Modal(this.$refs.CourseModal);
     this.myModal = myModal;
   },
 };
