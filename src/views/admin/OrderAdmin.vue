@@ -32,9 +32,8 @@
                   height: 100%;
                   background-color: #e8f8e7;
                   padding: 0.5rem 28px 0.5rem 28px;
-                  color: black;
-                "
-                @click.prevent="editOrder"
+                  color: black;"
+                @click.prevent="openDetail(order)"
                 >詳情</a
               >
               <a
@@ -92,15 +91,18 @@
   </div>
   <Del-Check ref="delModal" @getData="getData"></Del-Check>
   <OrderAlert ref="editModal"></OrderAlert>
+  <orderDetail ref="DetailModal"></orderDetail>
 </template>
 
 <script>
 import DelCheck from "../../components/admin/DelCheck.vue";
 import OrderAlert from "../../components/admin/OrderAlert.vue";
+import orderDetail from "../../components/admin/OrderDetail.vue";
 export default {
   components: {
     DelCheck,
     OrderAlert,
+    orderDetail,
   },
   data() {
     return {
@@ -131,8 +133,8 @@ export default {
           console.log(error);
         });
     },
-    editOrder() {
-      this.$refs.editModal.openModal();
+    openDetail(order) {
+      this.$refs.DetailModal.openModal(order);
     },
     daleteOrder(id) {
       this.$refs.delModal.isorder = 1;
