@@ -25,10 +25,10 @@
         <div class="modal-body mt-5">
           <div class="row">
             <div class="d-flex justify-content-around mb-5">
-              <div style="width: 40%">
+              <div style="width: 45%">
                 <img :src="AlertData.data.imageUrl" class="img-fluid" alt="" />
               </div>
-              <div class="mt-auto ms-1" style="width: 40%">
+              <div class="mt-auto ms-1" style="width: 45%">
                 <!-- <button class="btn btn-prmary btn-lg">上傳檔案</button> -->
                 <label for="fileInput" class="fs-5 mb-3">上傳圖片</label>
                 <input
@@ -41,7 +41,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-around">
-              <div style="width: 40%">
+              <div style="width: 45%">
                 <label for="category" class="form-label fs-5">課程類別</label>
                 <select
                   id="category"
@@ -56,7 +56,7 @@
                   <option value="段位班">段位班</option>
                 </select>
               </div>
-              <div style="width: 40%">
+              <div style="width: 45%">
                 <label for="coursename" class="form-label fs-5">課程名稱</label>
                 <input
                   type="text"
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-around mb-3">
-              <div style="width: 40%">
+              <div style="width: 45%">
                 <label for="courselv" class="form-label fs-5">課程級數</label>
                 <input
                   type="text"
@@ -78,10 +78,10 @@
                   v-model="AlertData.data.unit"
                 />
               </div>
-              <div style="width: 40%"></div>
+              <div style="width: 45%"></div>
             </div>
             <div class="d-flex justify-content-around mb-3">
-              <div style="width: 40%">
+              <div style="width: 45%">
                 <label for="oldprice" class="form-label fs-5">原價</label>
                 <input
                   type="number"
@@ -91,7 +91,7 @@
                   v-model="AlertData.data.origin_price"
                 />
               </div>
-              <div style="width: 40%">
+              <div style="width: 45%">
                 <label for="price" class="form-label fs-5">售價</label>
                 <input
                   type="number"
@@ -104,7 +104,7 @@
             </div>
           </div>
           <div class="d-flex justify-content-center mb-3">
-            <div style="width: 90%">
+            <div style="width: 95%">
               <label for="FormControlTextarea" class="form-label fs-5"
                 >課程介紹</label
               >
@@ -127,7 +127,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-around mb-2">
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -140,7 +140,7 @@
                   v-model="AlertData.data.content[0]"
                 />
               </div>
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -155,7 +155,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-around mb-2">
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -168,7 +168,7 @@
                   v-model="AlertData.data.content[1]"
                 />
               </div>
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -183,7 +183,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-around mb-2">
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -196,7 +196,7 @@
                   v-model="AlertData.data.content[2]"
                 />
               </div>
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -211,7 +211,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-around mb-2">
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -224,7 +224,7 @@
                   v-model="AlertData.data.content[3]"
                 />
               </div>
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -239,7 +239,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-around mb-3">
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -252,7 +252,7 @@
                   v-model="AlertData.data.content[4]"
                 />
               </div>
-              <div class="input-group" style="width: 40%">
+              <div class="input-group" style="width: 45%">
                 <span
                   class="input-group-text border-end-0 border-top border-bottom border-start border-1 border-dark bg-secondary"
                   id="basic-addon1"
@@ -421,5 +421,8 @@ export default {
 <style>
 .form-control {
   border-radius: 2px solid black;
+}
+.btn-close {
+  --bs-btn-close-bg: url("../../assets/image/ic_round-close.svg");
 }
 </style>
