@@ -27,7 +27,7 @@
         <div class="modal-footer">
           <button
             type="button"
-            class="btn btn-lg btn-danger"
+            class="btn btn-lg btn-darklight"
             data-bs-dismiss="modal"
           >
             取消

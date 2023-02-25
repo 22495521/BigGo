@@ -291,7 +291,7 @@
         <div class="modal-footer justify-content-center py-3">
           <button
             type="button"
-            class="btn btn-lg btn-danger"
+            class="btn btn-lg btn-darklight"
             data-bs-dismiss="modal"
           >
             取消
