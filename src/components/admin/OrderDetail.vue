@@ -30,14 +30,14 @@
               <p>手機 : {{ user.tel }}</p>
               <p>地址 : {{ user.address }}</p>
             </div>
-            <hr style="border: 2px solid #cccccc" />
+            <hr style="border: 1px solid #000000" />
             <p class="fw-bold" style="font-size: 24px">訂單資訊</p>
             <div style="font-size: 20px">
               <p>訂單編號 : {{ order.id }}</p>
               <p>訂單日期 : {{ formatDate(order.create_at) }}</p>
               <p>留言 : {{ order.message }}</p>
             </div>
-            <hr style="border: 2px solid #cccccc" />
+            <hr style="border: 1px solid #000000" />
             <p class="fw-bold" style="font-size: 24px">訂單明細</p>
             <div style="font-size: 20px">
               <div
@@ -46,7 +46,7 @@
                 class="d-flex justify-content-between"
               >
                 <p>{{ item.product.category }}-{{ item.product.title }}</p>
-                <p>NT${{ item.total }}</p>
+                <p class="pe-3">NT${{ item.total }}</p>
               </div>
               <div
                 class="d-flex justify-content-between py-3 px-3"
