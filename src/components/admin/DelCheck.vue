@@ -9,7 +9,7 @@
   >
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content border-0">
-        <div class="modal-header text-white" style="background-color: red">
+        <div class="modal-header text-white" style="background-color:black">
           <h5 id="delProductModalLabel" class="modal-title">
             <span>刪除產品</span>
           </h5>
@@ -27,12 +27,12 @@
         <div class="modal-footer">
           <button
             type="button"
-            class="btn btn-outline-success"
+            class="btn btn-lg btn-danger"
             data-bs-dismiss="modal"
           >
             取消
           </button>
-          <button type="button" class="btn btn-danger" @click="delData">
+          <button type="button" class="btn-lg btn btn-success" @click="delData">
             確認刪除
           </button>
         </div>

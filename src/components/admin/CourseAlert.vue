@@ -17,7 +17,7 @@
           </h5>
           <button
             type="button"
-            class="btn-close"
+            class="btn-close btn-close-white"
             data-bs-dismiss="modal"
             aria-label="Close"
           ></button>
@@ -291,8 +291,7 @@
         <div class="modal-footer justify-content-center py-3">
           <button
             type="button"
-            class="btn btn-lg"
-            style="background-color: #cccccc"
+            class="btn btn-lg btn-danger"
             data-bs-dismiss="modal"
           >
             取消
@@ -421,8 +420,5 @@ export default {
 <style>
 .form-control {
   border-radius: 2px solid black;
-}
-.btn-close {
-  --bs-btn-close-bg: url("../../assets/image/ic_round-close.svg");
 }
 </style>
