@@ -26,16 +26,16 @@
             <p class="fw-bold" style="font-size: 24px">客戶資訊</p>
             <div style="font-size: 20px">
               <p>Email : {{ user.email }}</p>
-              <p>姓名 :{{ user.name }}</p>
-              <p>手機 :{{ user.tel }}</p>
-              <p>地址 :{{ user.address }}</p>
+              <p>姓名 : {{ user.name }}</p>
+              <p>手機 : {{ user.tel }}</p>
+              <p>地址 : {{ user.address }}</p>
             </div>
             <hr style="border: 2px solid #cccccc" />
             <p class="fw-bold" style="font-size: 24px">訂單資訊</p>
             <div style="font-size: 20px">
-              <p>訂單編號 :{{ order.id }}</p>
-              <p>訂單日期 :{{ formatDate(order.create_at) }}</p>
-              <p>留言 :{{ order.message }}</p>
+              <p>訂單編號 : {{ order.id }}</p>
+              <p>訂單日期 : {{ formatDate(order.create_at) }}</p>
+              <p>留言 : {{ order.message }}</p>
             </div>
             <hr style="border: 2px solid #cccccc" />
             <p class="fw-bold" style="font-size: 24px">訂單明細</p>
