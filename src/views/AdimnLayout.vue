@@ -48,12 +48,12 @@
           </li>
 
           <li class="nav-item ps-3">
-            <Router-Link
+            <a href="#"
               class="nav-link fw-bolder text-dark fs-6"
-              aria-current="page"
-              to="/admin/order"
-              >訂單</Router-Link
+              @click.prevent="SignOut"
             >
+              登出
+            </a>
           </li>
         </ul>
       </div>
@@ -80,6 +80,10 @@ export default {
         console.log(error);
         this.$router.push({ path: "/login" });
       });
+    },
+    SignOut() {
+      document.cookie = `bigtoken=; expired=`;
+      this.$router.push({ path: "/login" });
     },
   },
   created() {

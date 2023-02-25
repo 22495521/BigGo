@@ -1,4 +1,17 @@
 <template>
+  <loading
+    v-model:active="isLoading"
+    :can-cancel="false"
+    :is-full-page="fullPage"
+  >
+    <div class="loadingio-spinner-dual-ball-laqyobj2qgl">
+      <div class="ldio-sh19xg6jfo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </loading>
   <div class="container my-5">
     <div class="d-flex mb-5">
       <div class="flex-grow-1 text-center">
@@ -32,7 +45,8 @@
                   height: 100%;
                   background-color: #e8f8e7;
                   padding: 0.5rem 28px 0.5rem 28px;
-                  color: black;"
+                  color: black;
+                "
                 @click.prevent="openDetail(order)"
                 >詳情</a
               >
@@ -98,11 +112,14 @@
 import DelCheck from "../../components/admin/DelCheck.vue";
 import OrderAlert from "../../components/admin/OrderAlert.vue";
 import orderDetail from "../../components/admin/OrderDetail.vue";
+import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/css/index.css";
 export default {
   components: {
     DelCheck,
     OrderAlert,
     orderDetail,
+    Loading,
   },
   data() {
     return {
@@ -114,10 +131,13 @@ export default {
       Nowpage: 1,
       pagination: null,
       orders: {},
+      fullPage: true,
+      isLoading: false,
     };
   },
   methods: {
     getData() {
+      this.isLoading = true;
       const url = `${this.url}api/${this.path}/admin/orders?page=${this.Nowpage}`;
       this.$http
         .get(url)
@@ -127,7 +147,7 @@ export default {
           this.total_pages = res.data.pagination.total_pages;
           this.has_next = res.data.pagination.has_next;
           this.has_pre = res.data.pagination.has_pre;
-          console.log(this.orders);
+          this.isLoading = false;
         })
         .catch((error) => {
           console.log(error);

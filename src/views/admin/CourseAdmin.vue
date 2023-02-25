@@ -55,8 +55,7 @@
                   height: 100%;
                   background-color: #e8f8e7;
                   padding: 0.5rem 28px 0.5rem 28px;
-                  color: black;
-                "
+                  color: black;"
                 @click.prevent="editCourse(item)"
                 >編輯</a
               >
@@ -144,16 +143,19 @@ export default {
   },
   methods: {
     getData() {
+      this.isLoading = true;
       const url = `${this.url}api/${this.path}/admin/products/?page=${this.Nowpage}`;
       this.$http
         .get(url)
         .then((res) => {
           this.products = res.data.products;
+          console.log(123);
+          this.isLoading = false;
+          console.log(321);
           this.pagination = { ...res.data.pagination };
           this.total_pages = res.data.pagination.total_pages;
           this.has_pre = res.data.pagination.has_pre;
           this.has_next = res.data.pagination.has_next;
-          this.doAjax();
         })
         .catch((error) => {
           console.log(error);
@@ -184,13 +186,6 @@ export default {
     reducePage() {
       this.Nowpage -= 1;
       this.getData();
-    },
-    doAjax() {
-      this.isLoading = true;
-      // simulate AJAX
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000);
     },
   },
   created() {

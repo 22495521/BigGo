@@ -9,7 +9,7 @@
     data-bs-backdrop="static"
   >
     <div class="modal-dialog modal-xl">
-      <div class="modal-content border-0">
+      <div class="modal-content border-0" v-if="products">
         <div class="modal-header bg-dark text-white">
           <h5 id="DetailModalLabel" class="modal-title">
             <span>訂單詳情</span>
@@ -79,10 +79,8 @@ export default {
     return {
       myModal: null,
       products: null,
-      user: {
-        name: null,
-      },
-      order: { id: null },
+      user: {},
+      order: {},
       total: null,
     };
   },
@@ -93,7 +91,6 @@ export default {
       this.user = order.user;
       this.total = order.total;
       this.myModal.show();
-      console.log(this.order);
     },
     formatDate(data) {
       const date = new Date(data * 1000);

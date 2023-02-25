@@ -29,7 +29,6 @@
                 <img :src="AlertData.data.imageUrl" class="img-fluid" alt="" />
               </div>
               <div class="mt-auto ms-1" style="width: 45%">
-                <!-- <button class="btn btn-prmary btn-lg">上傳檔案</button> -->
                 <label for="fileInput" class="fs-5 mb-3">上傳圖片</label>
                 <input
                   type="file"
@@ -49,6 +48,7 @@
                   aria-label=".form-select-lg example"
                   v-model="AlertData.data.category"
                 >
+                  <option value="免費課程">免費課程</option>
                   <option value="啟蒙班">啟蒙班</option>
                   <option value="初級班">初級班</option>
                   <option value="中級班">中級班</option>
@@ -315,19 +315,7 @@ export default {
       myModal: null,
       ModalData: {},
       subcontorl: 0,
-      AlertData: {
-        data: {
-          title: null,
-          category: "啟蒙班",
-          origin_price: 0,
-          price: 0,
-          unit: null,
-          description: null,
-          content: [null, null, null, null, null, null, null, null, null, null],
-          is_enabled: 1,
-          imageUrl: null,
-        },
-      },
+      AlertData: null,
     };
   },
   methods: {
@@ -390,11 +378,12 @@ export default {
           });
       }
     },
+    //清空彈跳視窗
     cleartAlert() {
       this.AlertData = {
         data: {
           title: null,
-          category: "啟蒙班",
+          category: "免費課程",
           origin_price: 0,
           price: 0,
           unit: null,
@@ -409,6 +398,7 @@ export default {
   created() {
     this.url = import.meta.env.VITE_API;
     this.path = import.meta.env.VITE_APIPATH;
+    this.cleartAlert();
   },
   mounted() {
     const myModal = new Modal(this.$refs.CourseModal);
