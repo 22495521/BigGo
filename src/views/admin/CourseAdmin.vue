@@ -55,7 +55,8 @@
                   height: 100%;
                   background-color: #e8f8e7;
                   padding: 0.5rem 28px 0.5rem 28px;
-                  color: black;"
+                  color: black;
+                "
                 @click.prevent="editCourse(item)"
                 >編輯</a
               >
@@ -168,8 +169,11 @@ export default {
     },
     editCourse(data) {
       this.$refs.courseModal.iseditCourse();
-      this.$refs.courseModal.AlertData.data = data;
-      this.$refs.courseModal.openModal();
+      // this.$refs.courseModal.AlertData.data = data;
+      (this.$refs.courseModal.AlertData.data = {
+        ...data,
+      }),
+        this.$refs.courseModal.openModal();
     },
     daleteCourse(id) {
       this.$refs.delModal.isorder = 0;
