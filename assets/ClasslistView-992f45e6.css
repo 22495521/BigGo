@@ -1,1 +1,0 @@
-.placeholder{height:2000px}.balloon{position:fixed;bottom:0;left:50%;transform:translate(-50%);width:50px;height:80px;background-image:url(/path/to/balloon-image.png);background-size:contain;opacity:0;transition:opacity .5s ease-in-out}.floating{opacity:1;animation:float-up 4s forwards}@keyframes float-up{0%{transform:translateY(0)}to{transform:translateY(-500px)}}
