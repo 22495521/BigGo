@@ -57,7 +57,7 @@
             <Router-Link
               class="nav-link fw-bolder text-dark fs-6"
               aria-current="page"
-              to="/Classlist"
+              to="/CourseOverview"
               >課程總覽</Router-Link
             >
           </li>

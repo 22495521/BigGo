@@ -13,8 +13,8 @@ const router = createRouter({
           component: () => import("../views/front/FrontPage.vue"),
         },
         {
-          path: "Classlist",
-          component: () => import("../views/front/ClasslistView.vue"),
+          path: "CourseOverview",
+          component: () => import("../views/front/CourseOverview.vue"),
         },
         {
           path: "Quesiton",
