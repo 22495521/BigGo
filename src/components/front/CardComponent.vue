@@ -25,7 +25,7 @@
       </div>
       <div>
         <button
-          :class="[color == 1 ? 'btn-primary' : 'btnyellow']"
+          :class="[color == 1 ? 'btn-success' : 'btnyellow']"
           class="btn w-100 border border-2 border-dark"
           style="
                   padding:7px 15px
