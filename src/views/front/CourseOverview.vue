@@ -61,6 +61,7 @@
         >
           <CardComponent
             :data="item"
+            :color="'0'"
             v-for="item in course[0]"
             :key="item.id"
           ></CardComponent>
@@ -77,6 +78,7 @@
         >
           <CardComponent
             :data="item"
+            :color="'1'"
             v-for="item in course[1]"
             :key="item.id"
           ></CardComponent>
@@ -92,6 +94,7 @@
           class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
         >
           <CardComponent
+            :color="'0'"
             :data="item"
             v-for="item in course[2]"
             :key="item.id"
@@ -109,6 +112,7 @@
         >
           <CardComponent
             :data="item"
+            :color="'1'"
             v-for="item in course[3]"
             :key="item.id"
           ></CardComponent>
@@ -125,6 +129,7 @@
         >
           <CardComponent
             :data="item"
+            :color="'0'"
             v-for="item in course[4]"
             :key="item.id"
           ></CardComponent>

@@ -25,7 +25,8 @@
       </div>
       <div>
         <button
-          class="btn btn-primary w-100 border border-2 border-dark"
+          :class="[color == 1 ? 'btn-primary' : 'btnyellow']"
+          class="btn w-100 border border-2 border-dark"
           style="
                   padding:7px 15px
                   border: 3px solid #6f6f6f;
@@ -40,7 +41,7 @@
 
 <script>
 export default {
-  props: ["data"],
+  props: ["data", "color"],
 };
 </script>
 
@@ -91,5 +92,13 @@ export default {
   .card-text div {
     font-size: 23px;
   }
+}
+
+.btnyellow {
+  background-color: #ffdfa0;
+
+}
+.btnyellow:hover {
+  background-color: #fae8c5;
 }
 </style>
