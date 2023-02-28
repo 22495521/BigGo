@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-center overflow-auto text-nowrap py-5"
+    class="text-center overflow-auto text-nowrap pt-5"
     style="background-color: #f6f6f6"
   >
     <button
@@ -51,134 +51,137 @@
       段位課程
     </button>
   </div>
+  <div class="pb-5" style="background-color: #f6f6f6"></div>
   <div style="background-color: #f6f6f6">
-    <div style="background-color: white" class="pt-5 course-radius">
+    <div style="background-color: white" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">免費課程</p>
-      <div
-        class="d-flex flex-column flex-md-row justify-content-center align-items-center px-md-4 px-xxl-6"
-      >
+      <div class="px-md-5 px-xxl-7 card-padding">
         <div
-          class="card col-8 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-3 mb-md-0 pt-3 px-3 mx-md-2"
-          style="border-radius: 12px"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
         >
-          <img
-            src="../../assets/image/課程總覽/Section_01_免費課程.jpg"
-            style="border-radius: 12px"
-            class="card-img-top img-fluid"
-            alt="..."
-          />
-          <div class="card-body">
-            <div class="row">
-              <h5 class="card-title col-6">入門</h5>
-              <div
-                class="col-6 text-end text-decoration-line-through"
-                style="color: #909090"
-              >
-                NT$3000
-              </div>
-            </div>
-            <div class="card-text row">
-              <p class="col-6 text-nowrap">適合：零基礎</p>
-              <div class="col-6 text-end">NT$2500</div>
-            </div>
-            <div>
-              <button
-                class="btn btn-primary w-100"
-                style="
-                  padding:7px 15px
-                  border: 2px solid #6f6f6f;
-                  border-radius: 640px;
-                "
-              >
-                課程詳情
-              </button>
-            </div>
-          </div>
+          <CardComponent
+            :data="item"
+            v-for="item in course[0]"
+            :key="item.id"
+          ></CardComponent>
         </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: white">
+    <div style="background-color: #f6f6f6" class="py-5 course-radius">
+      <p class="h2 mb-4 text-center">啟蒙班</p>
+      <div class="px-md-5 px-xxl-7 card-padding">
         <div
-          class="card col-8 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-3 mb-md-0 pt-3 px-3 mx-md-1"
-          style="border-radius: 12px"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
         >
-          <img
-            src="../../assets/image/課程總覽/Section_01_免費課程.jpg"
-            style="border-radius: 12px"
-            class="card-img-top img-fluid"
-            alt="..."
-          />
-          <div class="card-body">
-            <div class="row">
-              <h5 class="card-title col-6">入門</h5>
-              <div
-                class="col-6 text-end text-decoration-line-through"
-                style="color: #909090"
-              >
-                NT$3000
-              </div>
-            </div>
-            <div class="card-text row">
-              <p class="col-6 text-nowrap">適合：零基礎</p>
-              <div class="col-6 text-end">NT$2500</div>
-            </div>
-            <div>
-              <button
-                class="btn btn-primary w-100"
-                style="
-                  padding:7px 15px
-                  border: 2px solid #6f6f6f;
-                  border-radius: 640px;
-                "
-              >
-                課程詳情
-              </button>
-            </div>
-          </div>
+          <CardComponent
+            :data="item"
+            v-for="item in course[1]"
+            :key="item.id"
+          ></CardComponent>
         </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #f6f6f6">
+    <div style="background-color: white" class="py-5 course-radius">
+      <p class="h2 mb-4 text-center">中級班</p>
+      <div class="px-md-5 px-xxl-7 card-padding">
         <div
-          class="card col-8 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-3 mb-md-0 pt-3 px-3 mx-md-1"
-          style="border-radius: 12px"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
         >
-          <img
-            src="../../assets/image/課程總覽/Section_01_免費課程.jpg"
-            style="border-radius: 12px"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <div class="row">
-              <h5 class="card-title col-6">入門</h5>
-              <div
-                class="col-6 text-end text-decoration-line-through"
-                style="color: #909090"
-              >
-                NT$3000
-              </div>
-            </div>
-            <div class="card-text row">
-              <p class="col-6 text-nowrap">適合：零基礎</p>
-              <div class="col-6 text-end">NT$2500</div>
-            </div>
-            <div>
-              <button
-                class="btn btn-primary w-100"
-                style="
-                  padding:7px 15px
-                  border: 2px solid #6f6f6f;
-                  border-radius: 640px;
-                "
-              >
-                課程詳情
-              </button>
-            </div>
-          </div>
+          <CardComponent
+            :data="item"
+            v-for="item in course[2]"
+            :key="item.id"
+          ></CardComponent>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: white">
+    <div style="background-color: #f6f6f6" class="py-5 course-radius">
+      <p class="h2 mb-4 text-center">高級班</p>
+      <div class="px-md-5 px-xxl-7 card-padding">
+        <div
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
+        >
+          <CardComponent
+            :data="item"
+            v-for="item in course[3]"
+            :key="item.id"
+          ></CardComponent>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #f6f6f6">
+    <div style="background-color: white" class="py-5 course-radius">
+      <p class="h2 mb-4 text-center">段位班</p>
+      <div class="px-md-5 px-xxl-7 card-padding">
+        <div
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
+        >
+          <CardComponent
+            :data="item"
+            v-for="item in course[4]"
+            :key="item.id"
+          ></CardComponent>
         </div>
       </div>
     </div>
   </div>
 </template>
 
+<script>
+import CardComponent from "../../components/front/CardComponent.vue";
+export default {
+  components: {
+    CardComponent,
+  },
+  data() {
+    return {
+      course: [[], [], [], [], []],
+    };
+  },
+  methods: {
+    getCourse() {
+      const url = `${import.meta.env.VITE_API}api/${
+        import.meta.env.VITE_APIPATH
+      }/products/all`;
+      this.$http
+        .get(url)
+        .then((res) => {
+          const data = res.data.products;
+          data.forEach((element) => {
+            if (element.category == "免費課程") {
+              this.course[0].push(element);
+            } else if (element.category == "啟蒙班") {
+              this.course[1].push(element);
+            } else if (element.category == "中級班") {
+              this.course[2].push(element);
+            } else if (element.category == "高級班") {
+              this.course[3].push(element);
+            } else if (element.category == "段位班") {
+              this.course[4].push(element);
+            }
+          });
+          console.log(this.course);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
+  mounted() {
+    this.getCourse();
+  },
+};
+</script>
 <style>
 .course-radius {
-  border-radius: 104px 104px 0px 0px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 104px 104px 0px 0px;
 }
 </style>
