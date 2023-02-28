@@ -1,4 +1,13 @@
 <template>
+  <loading v-model:active="isLoading" :can-cancel="false">
+    <div class="loadingio-spinner-dual-ball-laqyobj2qgl">
+      <div class="ldio-sh19xg6jfo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </loading>
   <div
     class="text-center overflow-auto text-nowrap pt-5"
     style="background-color: #f6f6f6"
@@ -11,42 +20,42 @@
         padding: 12px 30px;
         background: #ffc656;
       "
-      class="me-1 btn rounded-pill"
+      class="me-3 btn rounded-pill"
     >
       所有課程
     </button>
     <button
       type="button"
       style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-1 btn rounded-pill"
+      class="me-3 btn rounded-pill"
     >
       免費課程
     </button>
     <button
       type="button"
       style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-1 btn rounded-pill"
+      class="me-3 btn rounded-pill"
     >
       啟蒙課程
     </button>
     <button
       type="button"
       style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-1 btn rounded-pill"
+      class="me-3 btn rounded-pill"
     >
       中級課程
     </button>
     <button
       type="button"
       style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-1 btn rounded-pill"
+      class="me-3 btn rounded-pill"
     >
       高級課程
     </button>
     <button
       type="button"
       style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-1 btn rounded-pill"
+      class="me-3 btn rounded-pill"
     >
       段位課程
     </button>
@@ -140,18 +149,23 @@
 </template>
 
 <script>
+import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/css/index.css";
 import CardComponent from "../../components/front/CardComponent.vue";
 export default {
   components: {
     CardComponent,
+    Loading,
   },
   data() {
     return {
+      isLoading: false,
       course: [[], [], [], [], []],
     };
   },
   methods: {
     getCourse() {
+      this.isLoading = true;
       const url = `${import.meta.env.VITE_API}api/${
         import.meta.env.VITE_APIPATH
       }/products/all`;
@@ -171,8 +185,8 @@ export default {
             } else if (element.category == "段位班") {
               this.course[4].push(element);
             }
+            this.isLoading = false;
           });
-          console.log(this.course);
         })
         .catch((error) => {
           console.log(error);
