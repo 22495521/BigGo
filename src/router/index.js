@@ -20,6 +20,10 @@ const router = createRouter({
           path: "Quesiton",
           component: () => import("../views/front/QuestionView.vue"),
         },
+        {
+          path: "course/:id",
+          component: () => import("../views/front/CourseDetail.vue"),
+        }
       ],
     },
     {

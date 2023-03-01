@@ -13,55 +13,77 @@
     style="background-color: #f6f6f6"
   >
     <button
+      @click="selectedTag = ''"
       type="button"
-      style="
-        width: 128px;
-        height: 51px;
-        padding: 12px 30px;
-        background: #ffc656;
-      "
-      class="me-3 btn rounded-pill"
+      :class="{ isActive: selectedTag == '', notActive: selectedTag != '' }"
+      style="width: 128px; height: 51px; padding: 12px 30px"
+      class="me-3 rounded-pill"
     >
       所有課程
     </button>
     <button
+      @click="selectedTag = 'tag1'"
+      :class="{
+        isActive: selectedTag == 'tag1',
+        notActive: selectedTag != 'tag1',
+      }"
       type="button"
-      style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 btn rounded-pill"
+      style="width: 128px; height: 51px; padding: 12px 30px"
+      class="me-3 rounded-pill"
     >
       免費課程
     </button>
     <button
+      @click="selectedTag = 'tag2'"
+      :class="{
+        isActive: selectedTag == 'tag2',
+        notActive: selectedTag != 'tag2',
+      }"
       type="button"
-      style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 btn rounded-pill"
+      style="width: 128px; height: 51px; padding: 12px 30px"
+      class="me-3 rounded-pill"
     >
       啟蒙課程
     </button>
     <button
+      @click="selectedTag = 'tag3'"
+      :class="{
+        isActive: selectedTag == 'tag3',
+        notActive: selectedTag != 'tag3',
+      }"
       type="button"
-      style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 btn rounded-pill"
+      style="width: 128px; height: 51px; padding: 12px 30px"
+      class="me-3 rounded-pill"
     >
       中級課程
     </button>
     <button
+      @click="selectedTag = 'tag4'"
+      :class="{
+        isActive: selectedTag == 'tag4',
+        notActive: selectedTag != 'tag4',
+      }"
       type="button"
-      style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 btn rounded-pill"
+      style="width: 128px; height: 51px; padding: 12px 30px"
+      class="me-3 rounded-pill"
     >
       高級課程
     </button>
     <button
+      @click="selectedTag = 'tag5'"
+      :class="{
+        isActive: selectedTag == 'tag5',
+        notActive: selectedTag != 'tag5',
+      }"
       type="button"
-      style="background: white; width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 btn rounded-pill"
+      style="width: 128px; height: 51px; padding: 12px 30px"
+      class="me-3 rounded-pill"
     >
       段位課程
     </button>
   </div>
   <div class="pb-5" style="background-color: #f6f6f6"></div>
-  <div style="background-color: #f6f6f6">
+  <div v-if="showTag('tag1')" style="background-color: #f6f6f6">
     <div style="background-color: white" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">免費課程</p>
       <div class="px-md-5 px-xxl-7 card-padding">
@@ -78,7 +100,7 @@
       </div>
     </div>
   </div>
-  <div style="background-color: white">
+  <div v-if="showTag('tag2')" style="background-color: white">
     <div style="background-color: #f6f6f6" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">啟蒙班</p>
       <div class="px-md-5 px-xxl-7 card-padding">
@@ -95,7 +117,7 @@
       </div>
     </div>
   </div>
-  <div style="background-color: #f6f6f6">
+  <div v-if="showTag('tag3')" style="background-color: #f6f6f6">
     <div style="background-color: white" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">中級班</p>
       <div class="px-md-5 px-xxl-7 card-padding">
@@ -112,7 +134,7 @@
       </div>
     </div>
   </div>
-  <div style="background-color: white">
+  <div v-if="showTag('tag4')" style="background-color: white">
     <div style="background-color: #f6f6f6" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">高級班</p>
       <div class="px-md-5 px-xxl-7 card-padding">
@@ -129,7 +151,7 @@
       </div>
     </div>
   </div>
-  <div style="background-color: #f6f6f6">
+  <div v-if="showTag('tag5')" style="background-color: #f6f6f6">
     <div style="background-color: white" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">段位班</p>
       <div class="px-md-5 px-xxl-7 card-padding">
@@ -161,6 +183,7 @@ export default {
     return {
       isLoading: false,
       course: [[], [], [], [], []],
+      selectedTag: "",
     };
   },
   methods: {
@@ -192,9 +215,16 @@ export default {
           console.log(error);
         });
     },
+    showTag(tag) {
+      return this.selectedTag === "" || this.selectedTag === tag;
+    },
   },
   mounted() {
     this.getCourse();
+    // if (this.$route.query.scrollToTop === "true") {
+    //   window.scrollTo(0, 0);
+    // }
+    console.log(this.$router);
   },
 };
 </script>
@@ -202,5 +232,23 @@ export default {
 .course-radius {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 104px 104px 0px 0px;
+}
+.notActive {
+  background: white;
+}
+.notActive:hover {
+  background: #ffc656;
+}
+.isActive {
+  background: #ffc656;
+}
+.isActive:active,
+.notActive:active {
+  background: #ffc656;
+}
+
+.notActive,
+.isActive {
+  border: none;
 }
 </style>

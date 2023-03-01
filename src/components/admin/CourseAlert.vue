@@ -50,7 +50,6 @@
                 >
                   <option value="免費課程">免費課程</option>
                   <option value="啟蒙班">啟蒙班</option>
-                  <option value="初級班">初級班</option>
                   <option value="中級班">中級班</option>
                   <option value="高級班">高級班</option>
                   <option value="段位班">段位班</option>

@@ -18,7 +18,9 @@
             <div class="d-flex pb-0">
               <h4 class="card-title lh-1" style="font-weight: 700">入門</h4>
               <div class="ms-auto fs-6 text-decoration-line-through pb-0">
-                <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">NT$ 3000</p>
+                <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">
+                  NT$ 3000
+                </p>
               </div>
             </div>
 
@@ -30,7 +32,11 @@
               <button
                 href="#"
                 class="btn btn-primary btn btn-success rounded-pill"
-                style="padding: 3% 39%; border-radius: 20px; border: 3px solid #6f6f6f"
+                style="
+                  padding: 3% 39%;
+                  border-radius: 20px;
+                  border: 3px solid #6f6f6f;
+                "
               >
                 課程詳情
               </button>
@@ -52,7 +58,9 @@
             <div class="d-flex pb-0">
               <h4 class="card-title lh-1" style="font-weight: 700">初級A</h4>
               <div class="ms-auto fs-6 text-decoration-line-through pb-0">
-                <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">NT$ 3000</p>
+                <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">
+                  NT$ 3000
+                </p>
               </div>
             </div>
 
@@ -64,7 +72,11 @@
               <button
                 href="#"
                 class="btn btn-primary btn btn-success rounded-pill"
-                style="padding: 3% 39%; border-radius: 20px; border: 3px solid #6f6f6f"
+                style="
+                  padding: 3% 39%;
+                  border-radius: 20px;
+                  border: 3px solid #6f6f6f;
+                "
               >
                 課程詳情
               </button>
@@ -86,7 +98,9 @@
             <div class="d-flex pb-0">
               <h4 class="card-title lh-1" style="font-weight: 700">初級B</h4>
               <div class="ms-auto fs-6 text-decoration-line-through pb-0">
-                <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">NT$ 3000</p>
+                <p class="pb-0 pt-2 text-danger mb-0" style="font-size: 12px">
+                  NT$ 3000
+                </p>
               </div>
             </div>
 
@@ -98,7 +112,11 @@
               <button
                 href="#"
                 class="btn btn-primary btn btn-success rounded-pill"
-                style="padding: 3% 39%; border-radius: 20px; border: 3px solid #6f6f6f"
+                style="
+                  padding: 3% 39%;
+                  border-radius: 20px;
+                  border: 3px solid #6f6f6f;
+                "
               >
                 課程詳情
               </button>
@@ -108,12 +126,24 @@
       </div>
     </div>
     <div class="pt-3 py-5 justify-content-center d-flex">
-      <button
+      <Router-Link
         class="btn btn-primary rounded-pill"
         style="padding: 15px 80px; font-size: 24px"
+        aria-current="page"
+        to="/CourseOverview"
+        @click="scrollToTop"
+        >更多課程</Router-Link
       >
-        更多課程
-      </button>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
+};
+</script>

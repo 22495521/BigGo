@@ -1,6 +1,6 @@
 <template>
   <div
-    class="card card-list col-8 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-3 mb-md-0 pt-3 px-3 border border-2 border-dark"
+    class="card card-list mb-3 mb-md-0 pt-3 px-3 border border-2 border-dark"
     style="border-radius: 12px"
   >
     <img
@@ -24,16 +24,27 @@
         <div class="col-6 text-end">NT${{ data.price }}</div>
       </div>
       <div>
-        <button
+        <!-- <button
           :class="[color == 1 ? 'btn-success' : 'btnyellow']"
           class="btn w-100 border border-2 border-dark"
           style="
                   padding:7px 15px
                   border: 3px solid #6f6f6f;
                   border-radius: 640px;"
+          
+        > -->
+        <Router-Link
+          :class="[color == 1 ? 'btn-success' : 'btnyellow']"
+          class="btn w-100 border border-2 border-dark"
+          style="
+                  padding:7px 15px
+                  border: 3px solid #6f6f6f;
+                  border-radius: 640px;"
+          :to="`Course/${data.id}`"
+          >課程總覽</Router-Link
         >
-          課程詳情
-        </button>
+        <!-- 課程詳情 -->
+        <!-- </button> -->
       </div>
     </div>
   </div>
@@ -46,6 +57,9 @@ export default {
 </script>
 
 <style>
+.card-list {
+  width: 60%;
+}
 .card-title {
   font-size: 25px;
 }
@@ -61,7 +75,8 @@ export default {
 @media (min-width: 768px) {
   .card-list {
     width: 31%;
-    margin: 1% 1%;
+    margin: 2% 1%;
+    max-width: 385px;
   }
   .card-title {
     font-size: 20px;
@@ -77,9 +92,6 @@ export default {
   }
 }
 @media (min-width: 1200px) {
-  .card-list {
-    max-width: 385px;
-  }
   .card-title {
     font-size: 32px;
   }
@@ -96,7 +108,6 @@ export default {
 
 .btnyellow {
   background-color: #ffdfa0;
-
 }
 .btnyellow:hover {
   background-color: #fae8c5;
