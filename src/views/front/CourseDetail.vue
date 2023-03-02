@@ -271,7 +271,7 @@ export default {
       path: "",
       product: {},
       color: "red",
-      isLoading :false,
+      isLoading: false,
     };
   },
   methods: {
@@ -371,12 +371,13 @@ export default {
 }
 .btnred {
   border: none;
-  background-color: #ffb7b7;
+  background-color: #ffdfa0;
 }
 .btnred:hover {
   background-color: #ff8080;
 }
 .btnyellow {
+  border: none;
   background-color: #ffdfd0;
 }
 .btnyellow:hover {
