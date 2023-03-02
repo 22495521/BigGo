@@ -206,7 +206,7 @@
             />
           </div>
           <div class="teacher-w ps-md-4 pe-lg-8">
-            <h2 class="font-teacher-title pt-4 pt-md-0 mt-md-4 pb-3">
+            <h2 class="font-teacher-title pt-4 pt-md-0 mt-md-4 pb-3 fw-bold">
               大頭老師
             </h2>
             <p class="font-teacher-content">
