@@ -25,7 +25,7 @@
       </div>
       <div>
         <Router-Link
-          :class="[color == 1 ? 'btn-success' : 'btnyellow']"
+          :class="[color == 1 ? 'btnred' : 'btnyellow']"
           class="btn w-100 border border-2 border-dark"
           style="
                   padding:7px 15px
@@ -94,11 +94,16 @@ export default {
     font-size: 23px;
   }
 }
-
+.btnred {
+  background-color: #ff8180;
+}
+.btnred:hover {
+  background-color: #fea8a8;
+}
 .btnyellow {
-  background-color: #ffdfa0;
+  background-color: #ffc655;
 }
 .btnyellow:hover {
-  background-color: #fae8c5;
+  background-color: #ffe0a2;
 }
 </style>
