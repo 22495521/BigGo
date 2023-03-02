@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="card-text row">
-        <p class="col-6 text-nowrap">適合：{{ data.unit }}</p>
+        <p class="col-6 text-nowrap font-normal">適合：{{ data.unit }}</p>
         <div class="col-6 text-end">NT${{ data.price }}</div>
       </div>
       <div>
