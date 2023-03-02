@@ -216,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="px-5 px-md-0">
+      <div class="px-5 px-md-0 mb-7">
         <h2
           class="fw-bolder text-center text-md-start my-5"
           style="font-size: 40px"
