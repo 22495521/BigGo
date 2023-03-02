@@ -95,15 +95,15 @@ export default {
   }
 }
 .btnred {
-  background-color: #ff8180;
+  background-color: #ffb7b7;
 }
 .btnred:hover {
-  background-color: #fea8a8;
+  background-color: #ff8080;
 }
 .btnyellow {
-  background-color: #ffc655;
+  background-color: #ffe7d9;
 }
 .btnyellow:hover {
-  background-color: #ffe0a2;
+  background-color: #ffc655;
 }
 </style>
