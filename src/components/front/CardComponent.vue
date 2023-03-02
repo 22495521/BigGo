@@ -20,19 +20,10 @@
         </div>
       </div>
       <div class="card-text row">
-        <p class="col-6 text-nowrap mt-">適合：{{ data.unit }}</p>
+        <p class="col-6 text-nowrap">適合：{{ data.unit }}</p>
         <div class="col-6 text-end">NT${{ data.price }}</div>
       </div>
       <div>
-        <!-- <button
-          :class="[color == 1 ? 'btn-success' : 'btnyellow']"
-          class="btn w-100 border border-2 border-dark"
-          style="
-                  padding:7px 15px
-                  border: 3px solid #6f6f6f;
-                  border-radius: 640px;"
-          
-        > -->
         <Router-Link
           :class="[color == 1 ? 'btn-success' : 'btnyellow']"
           class="btn w-100 border border-2 border-dark"
@@ -43,8 +34,6 @@
           :to="`Course/${data.id}`"
           >課程總覽</Router-Link
         >
-        <!-- 課程詳情 -->
-        <!-- </button> -->
       </div>
     </div>
   </div>
