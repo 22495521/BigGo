@@ -200,7 +200,7 @@
         >
           <div class="teacher-img-w text-center">
             <img
-              src="../../assets/image/課程詳情/Section_01_avatar.svg"
+              src="../../assets/image/課程詳情/Section_01_avatar.png"
               class="img-fluid"
               alt=""
             />
@@ -216,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="px-5 px-md-0 mb-7">
+      <div class="px-5 px-md-0">
         <h2
           class="fw-bolder text-center text-md-start my-5"
           style="font-size: 40px"
@@ -231,13 +231,13 @@
           "
         >
           <p
-            class="ps-3 pe-5 py-3 bg-secondary font-conurse-talk"
+            class="ps-3 pe-3 pe-md-5 py-3 bg-secondary font-conurse-talk"
             style="border-radius: 12px"
           >
             壹 : 課程皆為線上課程，需準備一台電腦或手機。
           </p>
           <p
-            class="ps-3 pe-5 py-3 bg-secondary font-conurse-talk"
+            class="ps-3 pe-3 pe-md-5 py-3 bg-secondary font-conurse-talk"
             style="border-radius: 12px"
           >
             貳 : 喜歡實體練棋的學員可準備一組棋具。
@@ -269,7 +269,7 @@ export default {
 <style>
 .font-content,
 .font-teacher-content {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .font-title,
@@ -277,7 +277,7 @@ export default {
   font-size: 24px;
 }
 .font-conurse-talk {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
