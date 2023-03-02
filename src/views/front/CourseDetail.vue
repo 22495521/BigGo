@@ -184,6 +184,66 @@
           </div>
         </div>
       </div>
+      <div class="px-5 px-md-0">
+        <h2
+          class="fw-bolder text-center text-md-start my-5"
+          style="font-size: 40px"
+        >
+          師資
+        </h2>
+        <div
+          class="d-flex flex-column p-5 flex-md-row justify-content-md-center"
+          style="
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+          "
+        >
+          <div class="teacher-img-w text-center">
+            <img
+              src="../../assets/image/課程詳情/Section_01_avatar.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="teacher-w ps-md-4 pe-lg-8">
+            <h2 class="font-teacher-title pt-4 pt-md-0 mt-md-4 pb-3">
+              大頭老師
+            </h2>
+            <p class="font-teacher-content">
+              段位：中華民國圍棋協會四段<br />
+              幽默風趣的教學風格、擅長各種比喻故事，讓不管是大朋友或小朋友都能快樂學圍棋。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="px-5 px-md-0">
+        <h2
+          class="fw-bolder text-center text-md-start my-5"
+          style="font-size: 40px"
+        >
+          課程小叮嚀
+        </h2>
+        <div
+          class="d-flex flex-column p-5 justify-content-md-center"
+          style="
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+          "
+        >
+          <p
+            class="ps-3 pe-5 py-3 bg-secondary font-conurse-talk"
+            style="border-radius: 12px"
+          >
+            壹 : 課程皆為線上課程，需準備一台電腦或手機。
+          </p>
+          <p
+            class="ps-3 pe-5 py-3 bg-secondary font-conurse-talk"
+            style="border-radius: 12px"
+          >
+            貳 : 喜歡實體練棋的學員可準備一組棋具。
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -207,13 +267,26 @@ export default {
 </script>
 
 <style>
-.font-content {
+.font-content,
+.font-teacher-content {
   font-size: 20px;
 }
-.font-title {
+
+.font-title,
+.font-teacher-title {
   font-size: 24px;
 }
+.font-conurse-talk {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
+  .teacher-w {
+    width: 60%;
+  }
+  .teacher-img-w {
+    width: 35%;
+  }
   .outline {
     width: 42%;
     padding: 2%;
@@ -224,6 +297,13 @@ export default {
   .font-title {
     font-size: 32px;
   }
+  .font-teacher-content,
+  .font-teacher-title {
+    font-size: 23px;
+  }
+  .font-conurse-talk {
+    font-size: 32px;
+  }
 }
 .img-circle {
   border-radius: 50%;
@@ -231,6 +311,10 @@ export default {
 @media screen and (min-width: 992px) {
   .rowwidth {
     width: 50%;
+  }
+  .font-teacher-content,
+  .font-teacher-title {
+    font-size: 28px;
   }
 }
 .btn-icon {

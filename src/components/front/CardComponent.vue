@@ -1,6 +1,6 @@
 <template>
   <div
-    class="card card-list mb-3 mb-md-0 pt-3 px-3 border border-2 border-dark"
+    class="card card-list col-8 col-md-4 col-lg-4 col-xl-3 col-xxl-3 mb-3 mb-md-0 pt-3 px-3 border border-2 border-dark"
     style="border-radius: 12px"
   >
     <img
