@@ -192,13 +192,13 @@
           師資
         </h2>
         <div
-          class="d-flex flex-column p-5 flex-md-row justify-content-md-center"
+          class="d-flex flex-column p-5 flex-md-row justify-content-md-center p-lg-6"
           style="
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
             border-radius: 12px;
           "
         >
-          <div class="teacher-img-w text-center pe-5">
+          <div class="teacher-img-w text-center pe-md-2 pe-lg-4">
             <img
               src="../../assets/image/課程詳情/Section_01_avatar.png"
               class="img-fluid"
