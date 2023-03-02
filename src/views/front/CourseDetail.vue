@@ -55,8 +55,8 @@
           </div>
           <div class="text-md-end text-center mt-5">
             <button
-              type="button "
-              class="btn btn-success rounded-pill fs-5"
+              type="button"
+              class=" btnred rounded-pill fs-5"
               style="width: 243px; height: 61px; padding: 12px 32px"
             >
               <i class="bi bi-cart-fill me-3 btn-icon"></i>加入購物車
@@ -319,5 +319,12 @@ export default {
 }
 .btn-icon {
   font-size: 1.5rem;
+}
+.btnred {
+  border: none;
+  background-color: #ffb7b7;
+}
+.btnred:hover {
+  background-color: #ff8080;
 }
 </style>

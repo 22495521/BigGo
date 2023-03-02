@@ -32,7 +32,7 @@
                   border: 3px solid #6f6f6f;
                   border-radius: 640px;"
           :to="`Course/${data.id}`"
-          >課程總覽</Router-Link
+          >課程詳情</Router-Link
         >
       </div>
     </div>
