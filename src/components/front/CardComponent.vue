@@ -101,7 +101,7 @@ export default {
   background-color: #ff8080;
 }
 .btnyellow {
-  background-color: #ffe7d9;
+  background-color: #ffdfd0;
 }
 .btnyellow:hover {
   background-color: #ffc655;
