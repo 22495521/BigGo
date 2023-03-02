@@ -137,7 +137,8 @@
               style="
                 line-height: 140%;
                 border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);"
+                background: rgba(255, 231, 217, 0.6);
+              "
             >
               第六堂:{{ product.content[5] }}
             </div>
@@ -278,6 +279,8 @@ export default {
       if (this.product.category == "免費課程") {
         this.color = "yellow";
       } else if (this.product.category == "中級班") {
+        this.color = "yellow";
+      } else if (this.product.category == "段位班") {
         this.color = "yellow";
       } else {
         this.color = "red";

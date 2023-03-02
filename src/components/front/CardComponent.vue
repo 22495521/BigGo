@@ -27,6 +27,7 @@
         <Router-Link
           :class="[color == 1 ? 'btnred' : 'btnyellow']"
           class="btn w-100 border border-2 border-dark"
+          @click="scrollToTop"
           style="
                   padding:7px 15px
                   border: 3px solid #6f6f6f;
@@ -42,6 +43,12 @@
 <script>
 export default {
   props: ["data", "color"],
+
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>
 
