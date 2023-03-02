@@ -198,7 +198,7 @@
             border-radius: 12px;
           "
         >
-          <div class="teacher-img-w text-center">
+          <div class="teacher-img-w text-center pe-5">
             <img
               src="../../assets/image/課程詳情/Section_01_avatar.png"
               class="img-fluid"
@@ -216,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="px-5 px-md-0">
+      <div class="pb-md-5 px-5 px-md-0">
         <h2
           class="fw-bolder text-center text-md-start my-5"
           style="font-size: 40px"
