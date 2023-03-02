@@ -1,4 +1,13 @@
 <template>
+  <loading v-model:active="isLoading" :can-cancel="false">
+    <div class="loadingio-spinner-dual-ball-laqyobj2qgl">
+      <div class="ldio-sh19xg6jfo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </loading>
   <div class="container">
     <div v-if="product.title" class="mx-auto" style="max-width: 1156px">
       <div class="px-4 px-md-0">
@@ -249,7 +258,12 @@
   </div>
 </template>
 <script>
+import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/css/index.css";
 export default {
+  components: {
+    Loading,
+  },
   data() {
     return {
       id: "",
@@ -257,6 +271,7 @@ export default {
       path: "",
       product: {},
       color: "red",
+      isLoading :false,
     };
   },
   methods: {
@@ -264,12 +279,14 @@ export default {
       this.id = this.$route.params.id;
     },
     getCourse() {
+      this.isLoading = true;
       const url = `${this.url}api/${this.path}/product/${this.id}`;
       this.$http
         .get(url)
         .then((res) => {
           this.product = res.data.product;
           this.isred();
+          this.isLoading = false;
         })
         .catch((err) => {
           console.log(err);
