@@ -7,7 +7,9 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 import { LoadingPlugin } from "vue-loading-overlay";
 import "vue-loading-overlay/dist/css/index.css";
-import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 // import './assets/main.css'
 import "./assets/helpers/all.scss";
 const app = createApp(App);
