@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <div class="mx-auto" style="max-width: 1156px">
+    <div v-if="product.title" class="mx-auto" style="max-width: 1156px">
       <div class="px-4 px-md-0">
         <h2
           class="fw-bolder text-center text-md-start my-5"
           style="font-size: 40px"
         >
-          啟蒙班
+          {{ product.category }}
         </h2>
         <div
           class="p-5 py-lg-7 flex-md-row justify-content-md-center"
@@ -19,7 +19,7 @@
             <div class="rowwidth d-flex align-items-start">
               <div class="pt-lg-4">
                 <img
-                  src="../../assets/image/課程總覽/Section_02_啟蒙班.jpg"
+                  :src="product.imageUrl"
                   class="img-fluid"
                   style="border-radius: 16px"
                   alt=""
@@ -30,13 +30,13 @@
               <p
                 class="border-bottom border-2 border-dark text-center text-md-start py-4"
               >
-                <span class="font-title fw-bold">入門</span><br /><span
-                  class="font-content"
-                  >適合：零基礎</span
+                <span class="font-title fw-bold">{{ product.title }}</span
+                ><br /><span class="font-content"
+                  >適合：{{ product.unit }}</span
                 >
               </p>
               <p class="font-content py-2">
-                適合完全零基礎的學員，從最基本的數氣、長氣、吃棋以及算地盤，帶您一步步認識圍棋。
+                {{ product.description }}
               </p>
               <div
                 class="p-4 p-md-1 px-md-4 text-end"
@@ -45,10 +45,10 @@
                 <span
                   class="fs-6 text-decoration-line-through"
                   style="color: #909090"
-                  >NT$ 3000</span
+                  >NT$ {{ product.origin_price }}</span
                 ><br />
                 <span class="fs-2 fw-bolder" style="color: #6f6f6f"
-                  >NT$ 2500</span
+                  >NT$ {{ product.price }}</span
                 >
               </div>
             </div>
@@ -56,8 +56,9 @@
           <div class="text-md-end text-center mt-5">
             <button
               type="button"
-              class=" btnred rounded-pill fs-5"
+              class="rounded-pill fs-5"
               style="width: 243px; height: 61px; padding: 12px 32px"
+              :class="{ btnred: color == 'red', btnyellow: color == 'yellow' }"
             >
               <i class="bi bi-cart-fill me-3 btn-icon"></i>加入購物車
             </button>
@@ -87,7 +88,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第一堂:基本下法
+              第一堂:{{ product.content[0] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -97,7 +98,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第二堂:雙方氣盡
+              第二堂:{{ product.content[1] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -107,7 +108,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第三堂:打劫及虎口
+              第三堂:{{ product.content[2] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -117,7 +118,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第四堂:死亡線
+              第四堂:{{ product.content[3] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -127,7 +128,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第五堂:棋的戰鬥
+              第五堂:{{ product.content[4] }}
             </div>
           </div>
           <div class="d-flex flex-column outline">
@@ -136,10 +137,9 @@
               style="
                 line-height: 140%;
                 border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+                background: rgba(255, 231, 217, 0.6);"
             >
-              第六堂:連接手法
+              第六堂:{{ product.content[5] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -149,7 +149,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第七堂:金角銀邊草肚皮
+              第七堂:{{ product.content[6] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -159,7 +159,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第八堂:征子
+              第八堂:{{ product.content[7] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -169,7 +169,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第九堂:兩眼活棋
+              第九堂:{{ product.content[8] }}
             </div>
             <div
               class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
@@ -179,7 +179,7 @@
                 background: rgba(255, 231, 217, 0.6);
               "
             >
-              第十堂:比目法
+              第十堂:{{ product.content[9] }}
             </div>
           </div>
         </div>
@@ -252,15 +252,44 @@ export default {
   data() {
     return {
       id: "",
+      url: "",
+      path: "",
+      product: {},
+      color: "red",
     };
   },
   methods: {
     getId() {
       this.id = this.$route.params.id;
     },
+    getCourse() {
+      const url = `${this.url}api/${this.path}/product/${this.id}`;
+      this.$http
+        .get(url)
+        .then((res) => {
+          this.product = res.data.product;
+          this.isred();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+    isred() {
+      if (this.product.category == "免費課程") {
+        this.color = "yellow";
+      } else if (this.product.category == "中級班") {
+        this.color = "yellow";
+      } else {
+        this.color = "red";
+      }
+    },
   },
+
   created() {
+    this.url = import.meta.env.VITE_API;
+    this.path = import.meta.env.VITE_APIPATH;
     this.getId();
+    this.getCourse();
   },
   mounted() {},
 };
@@ -326,5 +355,11 @@ export default {
 }
 .btnred:hover {
   background-color: #ff8080;
+}
+.btnyellow {
+  background-color: #ffdfd0;
+}
+.btnyellow:hover {
+  background-color: #ffc655;
 }
 </style>
