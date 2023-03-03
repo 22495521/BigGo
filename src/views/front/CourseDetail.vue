@@ -375,7 +375,7 @@ export default {
   position: relative;
 }
 [data-aos="car-animation"] {
-  animation: car-drive 5s linear infinite;
+  animation: car-drive 5s ease-in-out infinite;
 }
 
 [data-aos="car-animation"].aos-animate {
@@ -383,33 +383,33 @@ export default {
 }
 @keyframes car-drive {
   from {
-    left: 10%;
+    right: -100%;
   }
   to {
-    left: 100%;
+    right: -10%;
     opacity: 0;
   }
 }
 
 @media (max-width: 768px) {
   .addcartbtn {
-  width: 186px;
-  height: 61px;
-}
+    width: 186px;
+    height: 61px;
+  }
   .car {
     width: 100px;
     height: 25px;
   }
 
   .car-wrapper {
-    top:50px
+    top: 50px;
   }
   @keyframes car-drive {
     from {
-      left: 10%;
+      right: -90%;
     }
     to {
-      left: 100%;
+      right: -10%;
       opacity: 0;
     }
   }
