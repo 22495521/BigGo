@@ -25,7 +25,7 @@
       </div>
       <div>
         <Router-Link
-          :class="[color == 1 ? 'btnred' : 'btnyellow']"
+          :class="[color == 1 ? 'btn-red' : 'btn-yellow']"
           class="btn w-100 border border-2 border-dark"
           @click="scrollToTop"
           style="
@@ -101,16 +101,16 @@ export default {
     font-size: 23px;
   }
 }
-.btnred {
+.btn-red {
   background-color: #ffb7b7;
 }
-.btnred:hover {
+.btn-red:hover {
   background-color: #ff8080;
 }
-.btnyellow {
+.btn-yellow {
   background-color: #ffdfa0;
 }
-.btnyellow:hover {
+.btn-yellow:hover {
   background-color: #ffc655;
 }
 </style>
