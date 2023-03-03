@@ -61,7 +61,7 @@ import "aos/dist/aos.css";
 export default {
   mounted() {
     AOS.init({
-      offset: 800,
+      offset: 300,
       delay: 0,
       duration: 1500,
       easing: "ease",

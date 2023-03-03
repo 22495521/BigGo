@@ -1,5 +1,7 @@
 <template>
-  <div class="banner d-flex flex-column justify-content-center align-items-center">
+  <div
+    class="banner d-flex flex-column justify-content-center align-items-center banner-text"
+  >
     <div>
       <div class="banner-text text-start">
         <img
@@ -38,10 +40,15 @@
   padding-left: 0.5rem;
   background-image: linear-gradient(transparent 70%, #ff8080 50%);
 }
-
+.banner-text {
+  font-size: 64px;
+}
 @media screen and (max-width: 768px) {
   .banner {
     background: url("../../assets/image/首頁/Section_01_mobile.jpg");
+  }
+  .banner-text {
+    font-size: 48px;
   }
 }
 </style>
