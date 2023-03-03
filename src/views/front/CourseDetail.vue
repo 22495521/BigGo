@@ -12,8 +12,8 @@
     <div v-if="product.title" class="mx-auto" style="max-width: 1156px">
       <div class="px-4 px-md-0">
         <h2
-          class="fw-bolder text-center text-md-start my-5"
-          style="font-size: 40px"
+          class="fw-bolder text-center text-md-start"
+          style="font-size: 40px margin-top:80px; margin-bottom: 40px;;margin-top:80px; margin-bottom: 40px;"
         >
           {{ product.category }}
         </h2>
@@ -76,8 +76,8 @@
       </div>
       <div class="px-4 px-md-0">
         <h2
-          class="fw-bolder text-center text-md-start my-5"
-          style="font-size: 40px"
+          class="fw-bolder text-center text-md-start"
+          style="font-size: 40px margin-top:80px; margin-bottom: 40px; margin-top:80px; margin-bottom: 40px;"
         >
           課程大綱
         </h2>
@@ -90,104 +90,64 @@
         >
           <div class="d-flex flex-column outline">
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第一堂:{{ product.content[0] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第二堂:{{ product.content[1] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第三堂:{{ product.content[2] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第四堂:{{ product.content[3] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第五堂:{{ product.content[4] }}
             </div>
           </div>
           <div class="d-flex flex-column outline">
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第六堂:{{ product.content[5] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第七堂:{{ product.content[6] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第八堂:{{ product.content[7] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第九堂:{{ product.content[8] }}
             </div>
             <div
-              class="text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
-              style="
-                line-height: 140%;
-                border-radius: 12px;
-                background: rgba(255, 231, 217, 0.6);
-              "
+              class="bg-secondary text-nowrap overflow-auto border p-3 fs-4 mb-2 fw-bold"
+              style="line-height: 140%; border-radius: 12px"
             >
               第十堂:{{ product.content[9] }}
             </div>
@@ -196,8 +156,8 @@
       </div>
       <div class="px-5 px-md-0">
         <h2
-          class="fw-bolder text-center text-md-start my-5"
-          style="font-size: 40px"
+          class="fw-bolder text-center text-md-start"
+          style="font-size: 40px; margin-top: 80px; margin-bottom: 40px"
         >
           師資
         </h2>
@@ -215,8 +175,8 @@
               alt=""
             />
           </div>
-          <div class="teacher-w ps-md-4 pe-lg-8">
-            <h2 class="font-teacher-title pt-4 pt-md-0 mt-md-4 pb-3 fw-bold">
+          <div class="teacher-w pt-3 pt-md-0 ps-md-4 pe-lg-8 d-flex justify-content-center flex-column ">
+            <h2 class="font-teacher-title pb-3 fw-bold">
               大頭老師
             </h2>
             <p class="font-teacher-content">
@@ -228,8 +188,8 @@
       </div>
       <div class="mb-5 px-5 px-md-0">
         <h2
-          class="fw-bolder text-center text-md-start my-5"
-          style="font-size: 40px"
+          class="fw-bolder text-center text-md-start"
+          style="font-size: 40px; margin-top: 80px; margin-bottom: 40px"
         >
           課程小叮嚀
         </h2>
@@ -318,7 +278,7 @@ export default {
 <style>
 .font-content,
 .font-teacher-content {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .font-title,
