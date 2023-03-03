@@ -8,16 +8,20 @@
       </div>
     </div>
   </loading>
-  <div class="container position-relative overflow-hidden">
-    <div class="car-wrapper position-absolute w-100">
-      <img
-        src="../../assets/image/課程詳情/Section_01_illustration01.svg"
-        alt="car"
-        class="car"
-        data-aos="car-animation"
-      />
-    </div>
-    <div v-if="product.title" class="mx-auto" style="max-width: 1156px">
+  <div class="container">
+    <div
+      v-if="product.title"
+      class="mx-auto position-relative"
+      style="max-width: 1156px"
+    >
+      <div class="car-wrapper position-absolute w-75">
+        <img
+          src="../../assets/image/課程詳情/Section_01_illustration01.svg"
+          alt="car"
+          class="car"
+          data-aos="car-animation"
+        />
+      </div>
       <div class="px-4 px-md-0">
         <h2
           class="fw-bolder text-center text-md-start"
@@ -26,7 +30,7 @@
           {{ product.category }}
         </h2>
         <div
-          class="p-5 py-lg-7 flex-md-row justify-content-md-center"
+          class="p-3 py-lg-7 flex-md-row justify-content-md-center"
           style="
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
             border-radius: 12px;
@@ -70,11 +74,10 @@
               </div>
             </div>
           </div>
-          <div class="text-md-end text-center mt-5">
+          <div class="text-md-end text-center mt-5 py-2">
             <button
               type="button"
-              class="rounded-pill fs-5"
-              style="width: 243px; height: 61px; padding: 12px 32px"
+              class="btn rounded-pill fs-5 text-nowrap btn-lg addcartbtn"
               :class="{ btnred: color == 'red', btnyellow: color == 'yellow' }"
             >
               <i class="bi bi-cart-fill me-3 btn-icon"></i>加入購物車
@@ -90,7 +93,7 @@
           課程大綱
         </h2>
         <div
-          class="d-flex flex-column p-5 flex-md-row justify-content-md-center"
+          class="d-flex flex-column p-3 p-md-5 flex-md-row justify-content-md-center"
           style="
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
             border-radius: 12px;
@@ -202,7 +205,7 @@
           課程小叮嚀
         </h2>
         <div
-          class="d-flex flex-column p-5 justify-content-md-center"
+          class="d-flex flex-column p-3 p-md-5 justify-content-md-center"
           style="
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
             border-radius: 12px;
@@ -302,7 +305,10 @@ export default {
 .font-conurse-talk {
   font-size: 16px;
 }
-
+.addcartbtn {
+  width: 276px;
+  height: 61px;
+}
 @media screen and (min-width: 768px) {
   .teacher-w {
     width: 60%;
@@ -359,35 +365,53 @@ export default {
 }
 
 .car-wrapper {
-  top: 20px;
+  top: -15px;
 }
 .car {
-  width: 100px;
-  height: 25px;
+  width: 200px;
+  height: 50px;
   max-width: 100%;
   height: auto;
   position: relative;
 }
-@media (min-width: 768px) {
-  .car-wrapper {
-    top: 30px;
-  }
-}
-@keyframes car-drive {
-  from {
-    left: 100%;
-  }
-
-  to {
-    opacity: 0;
-    left: 0px;
-  }
-}
 [data-aos="car-animation"] {
-  animation: car-drive 8s linear infinite;
+  animation: car-drive 5s linear infinite;
 }
 
 [data-aos="car-animation"].aos-animate {
   animation-play-state: running;
+}
+@keyframes car-drive {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .addcartbtn {
+  width: 186px;
+  height: 61px;
+}
+  .car {
+    width: 100px;
+    height: 25px;
+  }
+
+  .car-wrapper {
+    top:50px
+  }
+  @keyframes car-drive {
+    from {
+      left: 10%;
+    }
+    to {
+      left: 100%;
+      opacity: 0;
+    }
+  }
 }
 </style>
