@@ -1,6 +1,6 @@
 <template>
   <div class="bg-secondary">
-    <p class="fs-2 text-center fw-bolder pt-5 pb-3 bg-secondary">好評見證</p>
+    <p class="fs-2 text-center pt-5 pb-3 bg-secondary" style="font-weight: 700;">好評見證</p>
     <div class="swiper-container pb-4">
       <swiper
         :slidesPerView="1.4"
