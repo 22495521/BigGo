@@ -8,7 +8,7 @@
       </div>
     </div>
   </loading>
-  <div class="container position-relative">
+  <div class="container position-relative overflow-hidden">
     <div class="car-wrapper position-absolute w-100">
       <img
         src="../../assets/image/課程詳情/Section_01_illustration01.svg"
