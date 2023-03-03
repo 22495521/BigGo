@@ -8,7 +8,15 @@
       </div>
     </div>
   </loading>
-  <div class="container">
+  <div class="container position-relative">
+    <div class="car-wrapper position-absolute w-100">
+      <img
+        src="../../assets/image/課程詳情/Section_01_illustration01.svg"
+        alt="car"
+        class="car"
+        data-aos="car-animation"
+      />
+    </div>
     <div v-if="product.title" class="mx-auto" style="max-width: 1156px">
       <div class="px-4 px-md-0">
         <h2
@@ -175,10 +183,10 @@
               alt=""
             />
           </div>
-          <div class="teacher-w pt-3 pt-md-0 ps-md-4 pe-lg-8 d-flex justify-content-center flex-column ">
-            <h2 class="font-teacher-title pb-3 fw-bold">
-              大頭老師
-            </h2>
+          <div
+            class="teacher-w pt-3 pt-md-0 ps-md-4 pe-lg-8 d-flex justify-content-center flex-column"
+          >
+            <h2 class="font-teacher-title pb-3 fw-bold">大頭老師</h2>
             <p class="font-teacher-content">
               段位：中華民國圍棋協會四段<br />
               幽默風趣的教學風格、擅長各種比喻故事，讓不管是大朋友或小朋友都能快樂學圍棋。
@@ -218,6 +226,8 @@
   </div>
 </template>
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/css/index.css";
 export default {
@@ -271,7 +281,11 @@ export default {
     this.getId();
     this.getCourse();
   },
-  mounted() {},
+  mounted() {
+    AOS.init({
+      duration: 2000,
+    });
+  },
 };
 </script>
 
@@ -342,5 +356,38 @@ export default {
 }
 .btnyellow:hover {
   background-color: #ffc655;
+}
+
+.car-wrapper {
+  top: 20px;
+}
+.car {
+  width: 100px;
+  height: 25px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .car-wrapper {
+    top: 30px;
+  }
+}
+@keyframes car-drive {
+  from {
+    left: 100%;
+  }
+
+  to {
+    opacity: 0;
+    left: 0px;
+  }
+}
+[data-aos="car-animation"] {
+  animation: car-drive 8s linear infinite;
+}
+
+[data-aos="car-animation"].aos-animate {
+  animation-play-state: running;
 }
 </style>

@@ -1,5 +1,17 @@
 <template>
   <div class="bg-secondary">
+    <div class="balloon1" data-aos="fade-up" data-aos-offset="400">
+      <img
+        src="../../assets/image/首頁/Section_01_blue_balloon.svg"
+        alt="Balloon"
+      />
+    </div>
+    <div class="balloon2" data-aos="fade-up" data-aos-offset="400">
+      <img
+        src="../../assets/image/首頁/Section_01_orange_balloon.svg"
+        alt="Balloon"
+      />
+    </div>
     <div class="container">
       <div class="row justify-content-center pt-6 pt-md-4">
         <div class="fs-2 text-center fw-bold mb-md-1">
@@ -55,3 +67,45 @@
     </div>
   </div>
 </template>
+
+<script>
+import AOS from "aos";
+import "aos/dist/aos.css";
+export default {
+  mounted() {
+    AOS.init({
+      offset: 300, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000,
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  },
+};
+</script>
+<style>
+.bg-secondary {
+  position: relative;
+}
+
+.balloon1 {
+  position: absolute;
+  right: 10%;
+  top: -40%;
+}
+.balloon2 {
+  position: absolute;
+  right: 30%;
+  top: -30%;
+}
+@media screen and (min-width: 768px) {
+  .balloon1 {
+    right: 5%;
+    top: -30%;
+  }
+  .balloon2 {
+    right: 10%;
+    top: -20%;
+  }
+}
+</style>
