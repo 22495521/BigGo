@@ -18,7 +18,7 @@
 <style>
 .stepCircle-font {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 700;
   white-space: nowrap;
 }
 .stepCircle-list > div {
