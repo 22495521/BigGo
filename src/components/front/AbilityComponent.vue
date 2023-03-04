@@ -1,7 +1,7 @@
 <template>
   <p class="mb-0 fw-bold fs-2 text-center py-4">圍棋提升的多維能力</p>
   <div class="container px-5 px-md-0 d-flex flex-column overflow-hidden">
-    <div class="d-md-flex" data-aos="fade-up">
+    <div class="d-md-flex" data-aos="fade-up" data-offset="200">
       <div class="card-w">
         <img
           src="../../assets/image/首頁/Section_04_img01.jpg"
@@ -18,7 +18,11 @@
         </div>
       </div>
     </div>
-    <div class="d-md-flex flex-md-row-reverse" data-aos="fade-up">
+    <div
+      class="d-md-flex flex-md-row-reverse"
+      data-aos="fade-up"
+      data-offset="200"
+    >
       <div class="card-w">
         <img
           src="../../assets/image/首頁/Section_04_img02.jpg"
@@ -35,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="d-md-flex" data-aos="fade-up">
+    <div class="d-md-flex" data-aos="fade-up" data-offset="200">
       <div class="card-w">
         <img
           src="../../assets/image/首頁/Section_04_img03.jpg"
@@ -61,7 +65,6 @@ import "aos/dist/aos.css";
 export default {
   mounted() {
     AOS.init({
-      offset: 300,
       delay: 0,
       duration: 1500,
       easing: "ease",
