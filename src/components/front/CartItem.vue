@@ -153,6 +153,7 @@
     font-size: 16px;
   }
   .trash-icon {
+    padding: 10px 0;
     font-size: 30px;
   }
 }
