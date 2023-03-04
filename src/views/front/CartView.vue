@@ -2,7 +2,8 @@
   <div class="wrap">
     <stepCirclelist></stepCirclelist>
     <CartItem></CartItem>
-
+    <CartItem></CartItem>
+    <CartItem></CartItem>
     <p class="total-font">總計NT$ 7500</p>
   </div>
   <div class="step-btn">
