@@ -65,7 +65,7 @@
 }
 .cart-content-price p:nth-of-type(2) {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: end;
 }
 .trash-icon {
