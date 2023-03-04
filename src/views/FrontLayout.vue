@@ -71,15 +71,16 @@
             >
           </li>
           <li class="nav-item ps-3">
-            <a href="#">
+            <Router-Link
+              class="nav-link fw-bolder text-dark fs-6"
+              aria-current="page"
+              to="/Cartview"
+            >
               <img
-                class="mt-2"
-                src="../assets/image/header/shopping_cart.svg"
-                width="25px"
-                height="25px"
-                alt="123"
-              />
-            </a>
+                src="../.././src/assets/image/Header/shopping_cart.svg"
+                style="width: 25px; heigth: 25px"
+                alt="購物車icon"
+            /></Router-Link>
           </li>
         </ul>
       </div>
