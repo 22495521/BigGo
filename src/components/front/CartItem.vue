@@ -52,7 +52,7 @@
 .cart-content-price {
   margin-left: auto;
   padding-right: 35px;
-  font-weight: 700;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
