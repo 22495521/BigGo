@@ -1,12 +1,12 @@
 <template>
   <div class="bg-white position-relative">
-    <div class="balloon1" data-aos="fade-up" data-aos-offset="400">
+    <div class="balloon1" data-aos="fade-up" data-aos-offset="200">
       <img
         src="../../assets/image/首頁/Section_01_blue_balloon.svg"
         alt="Balloon"
       />
     </div>
-    <div class="balloon2" data-aos="fade-up" data-aos-offset="400">
+    <div class="balloon2" data-aos="fade-up" data-aos-offset="200">
       <img
         src="../../assets/image/首頁/Section_01_orange_balloon.svg"
         alt="Balloon"
@@ -74,7 +74,7 @@ import "aos/dist/aos.css";
 export default {
   mounted() {
     AOS.init({
-      offset: 100, // offset (in px) from the original trigger point
+      offset: 200, // offset (in px) from the original trigger point
       delay: 0, // values from 0 to 3000, with step 50ms
       duration: 1000,
       easing: "ease", // default easing for AOS animations
