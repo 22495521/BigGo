@@ -4,10 +4,10 @@
     <CartItem></CartItem>
     <CartItem></CartItem>
     <CartItem></CartItem>
-    <p class="total-font">總計NT$ 7500</p>
+    <p class="total-font fw-bold">總計NT$ 7500</p>
   </div>
   <div class="step-btn">
-    <button type="button">下一步,填寫資料</button>
+    <button type="button fw-bold">下一步,填寫資料</button>
   </div>
 </template>
 
