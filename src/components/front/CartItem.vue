@@ -147,10 +147,13 @@
     font-size: 20px;
   }
   .cart-content-price p:first-of-type {
-    font-size: 16px;
+    font-size: 14px;
   }
   .cart-content-price p:nth-of-type(2) {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .trash-icon {
+    font-size: 30px;
   }
 }
 </style>

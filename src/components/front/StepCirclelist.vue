@@ -2,31 +2,16 @@
   <div class="d-flex justify-content-center stepCircle-list">
     <div class="justify-content-center d-flex flex-column">
       <div class="stepCircle">1</div>
-      <p
-        class="text-center stepCircle-font"
-
-      >
-        確認訂單
-      </p>
+      <p class="text-center stepCircle-font">確認訂單</p>
     </div>
     <div class="justify-content-center d-flex flex-column">
       <div class="stepCircle">2</div>
-      <p
-        class="text-center stepCircle-font"
-      >
-        確認訂單
-      </p>
+      <p class="text-center stepCircle-font">填寫資料</p>
     </div>
     <div class="justify-content-center d-flex flex-column">
       <div class="stepCircle">3</div>
-      <p
-        class="text-center stepCircle-font"
-   
-      >
-        確認訂單
-      </p>
+      <p class="text-center stepCircle-font">完成訂單</p>
     </div>
-
   </div>
 </template>
 
@@ -75,9 +60,6 @@
     margin: 20px;
   }
   .stepCircle {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
     font-size: 18px;
   }
 }
