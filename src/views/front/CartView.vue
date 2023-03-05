@@ -1,24 +1,39 @@
 <template>
   <div class="wrap">
-    <stepCirclelist></stepCirclelist>
-    <CartItem></CartItem>
-    <CartItem></CartItem>
-    <CartItem></CartItem>
-    <p class="total-font fw-bold">總計NT$ 7500</p>
-  </div>
-  <div class="step-btn">
-    <button type="button fw-bold">下一步,填寫資料</button>
+    <div>
+      <stepCirclelist></stepCirclelist>
+      <CartItem v-for="i in carts" :key="i.id" :item="i"></CartItem>
+      <p class="total-font fw-bold">總計NT$ 7500</p>
+      <div class="step-btn">
+        <button type="button fw-bold">下一步,填寫資料</button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import stepCirclelist from "../../components/front/StepCirclelist.vue";
+import { mapState } from "pinia";
+import { cartstore } from "../../stores/cart";
 import CartItem from "../../components/front/CartItem.vue";
+import stepCirclelist from "../../components/front/StepCirclelist.vue";
 export default {
   components: {
     stepCirclelist,
     CartItem,
   },
+  data() {
+    return {
+      item: null,
+    };
+  },
+  computed: {
+    ...mapState(cartstore, ["carts"]),
+  },
+  created() {
+    
+  },
+  mounted() {
+  }
 };
 </script>
 <style>

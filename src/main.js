@@ -18,5 +18,4 @@ app.use(LoadingPlugin);
 app.use(createPinia());
 app.use(VueAxios, axios);
 app.use(router);
-
 app.mount("#app");

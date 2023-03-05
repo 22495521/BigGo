@@ -145,6 +145,8 @@
   </div>
 </template>
 <script>
+import { mapActions } from "pinia";
+import { cartstore } from "../../src/stores/cart";
 import { RouterView, RouterLink } from "vue-router";
 // import Loading from "vue-loading-overlay";
 // import "vue-loading-overlay/dist/css/index.css";
@@ -161,6 +163,7 @@ export default {
     };
   },
   methods: {
+    ...mapActions(cartstore, ["getitem"]),
     // doAjax() {
     //   this.isLoading = true;
     //   // simulate AJAX
@@ -170,6 +173,7 @@ export default {
     // },
   },
   mounted() {
+    this.getitem();
     // this.doAjax();
   },
 };

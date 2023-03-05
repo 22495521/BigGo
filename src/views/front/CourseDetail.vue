@@ -33,8 +33,7 @@
           class="p-3 py-lg-7 flex-md-row justify-content-md-center"
           style="
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-            border-radius: 12px;
-          "
+            border-radius: 12px;"
         >
           <div class="d-flex flex-column flex-lg-row">
             <div class="rowwidth d-flex align-items-start">
@@ -79,6 +78,7 @@
               type="button"
               class="btn rounded-pill fs-5 text-nowrap btn-lg addcartbtn"
               :class="{ btnred: color == 'red', btnyellow: color == 'yellow' }"
+              @click="additem(product)"
             >
               <i class="bi bi-cart-fill me-3 btn-icon"></i>加入購物車
             </button>
@@ -232,7 +232,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loading from "vue-loading-overlay";
+import { mapActions } from "pinia";
+import { cartstore } from "../../stores/cart";
 import "vue-loading-overlay/dist/css/index.css";
+
 export default {
   components: {
     Loading,
@@ -248,6 +251,7 @@ export default {
     };
   },
   methods: {
+    ...mapActions(cartstore, ["additem"]),
     getId() {
       this.id = this.$route.params.id;
     },

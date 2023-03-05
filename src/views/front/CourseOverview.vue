@@ -221,10 +221,6 @@ export default {
   },
   mounted() {
     this.getCourse();
-    // if (this.$route.query.scrollToTop === "true") {
-    //   window.scrollTo(0, 0);
-    // }
-    console.log(this.$router);
   },
 };
 </script>

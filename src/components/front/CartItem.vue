@@ -1,26 +1,33 @@
 <template>
   <div class="cart-item">
     <div class="cart-content">
-      <img
-        class="img-fluid"
-        src="../../assets/image/課程總覽/Section_02_啟蒙班.jpg"
-        alt="購物車圖片"
-      />
+      <img class="img-fluid" :src="item.product.imageUrl" alt="購物車圖片" />
 
       <div class="cart-content-title">
-        <p>啟蒙班-入門</p>
+        <p>{{ item.product.category }}-{{ item.product.title }}</p>
       </div>
       <div class="cart-content-price">
-        <p>NT$ 3000</p>
-        <p>NT$ 2500</p>
+        <p>NT$ {{ item.product.origin_price }}</p>
+        <p>NT$ {{ item.product.price }}</p>
       </div>
     </div>
     <div class="trash-icon">
-      <i class="bi bi-trash3-fill"></i>
+      <button type="button" class="border-0" @click="deleteitem(item.id)">
+        <i class="bi bi-trash3-fill"></i>
+      </button>
     </div>
   </div>
 </template>
-
+<script>
+import { mapActions } from "pinia";
+import { cartstore } from "../../stores/cart";
+export default {
+  props: ["item"],
+  methods: {
+    ...mapActions(cartstore, ["deleteitem"]),
+  },
+};
+</script>
 <style>
 .cart-item {
   display: flex;
@@ -43,7 +50,6 @@
   padding-left: 25px;
   font-size: 32px;
   font-weight: 700;
-  white-space: nowrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,8 +86,16 @@
 .trash-icon:hover {
   background-color: #ff8080;
 }
+.trash-icon button {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}
+.trash-icon button:hover {
+  background-color: #ff8080;
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .cart-content img {
     width: 50%;
     height: auto;
@@ -139,6 +153,12 @@
   .trash-icon {
     width: 100%;
     font-size: 40px;
+  }
+}
+
+@media (max-width: 456px) {
+  .cart-content-title {
+    font-size: 25px;
   }
 }
 
