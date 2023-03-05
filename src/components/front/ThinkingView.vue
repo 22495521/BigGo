@@ -87,12 +87,12 @@ export default {
 .balloon1 {
   position: absolute;
   right: 10%;
-  top: -20%;
+  top: -25%;
 }
 .balloon2 {
   position: absolute;
   right: 30%;
-  top: -10%;
+  top: -15%;
 }
 @media screen and (min-width: 768px) {
   .balloon1 {
