@@ -86,9 +86,9 @@
   <div v-if="showTag('tag1')" style="background-color: #f6f6f6">
     <div style="background-color: white" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">免費課程</p>
-      <div class="px-md-5 px-xxl-7 card-padding">
+      <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
         >
           <CardComponent
             :data="item"
@@ -103,9 +103,9 @@
   <div v-if="showTag('tag2')" style="background-color: white">
     <div style="background-color: #f6f6f6" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">啟蒙班</p>
-      <div class="px-md-5 px-xxl-7 card-padding">
+      <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
         >
           <CardComponent
             :data="item"
@@ -120,9 +120,9 @@
   <div v-if="showTag('tag3')" style="background-color: #f6f6f6">
     <div style="background-color: white" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">中級班</p>
-      <div class="px-md-5 px-xxl-7 card-padding">
+      <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
         >
           <CardComponent
             :color="'0'"
@@ -137,9 +137,9 @@
   <div v-if="showTag('tag4')" style="background-color: white">
     <div style="background-color: #f6f6f6" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">高級班</p>
-      <div class="px-md-5 px-xxl-7 card-padding">
+      <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
         >
           <CardComponent
             :data="item"
@@ -154,9 +154,9 @@
   <div v-if="showTag('tag5')" style="background-color: #f6f6f6">
     <div style="background-color: white" class="py-5 course-radius">
       <p class="h2 mb-4 text-center">段位班</p>
-      <div class="px-md-5 px-xxl-7 card-padding">
+      <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center px-xxxl-7"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
         >
           <CardComponent
             :data="item"
@@ -221,6 +221,7 @@ export default {
   },
   mounted() {
     this.getCourse();
+
   },
 };
 </script>

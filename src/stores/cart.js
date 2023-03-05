@@ -71,6 +71,12 @@ export const cartstore = defineStore("cart", {
         .delete(url)
         .then(() => {
           this.getitem();
+          Swal.fire({
+            icon: "success",
+            title: "成功刪除單一課程",
+            showConfirmButton: false,
+            timer: 1000,
+          });
         })
         .catch((err) => {
           console.log(err);

@@ -21,7 +21,7 @@
       </div>
       <div class="card-text row">
         <p class="col-6 text-nowrap font-normal">適合：{{ data.unit }}</p>
-        <div class="col-6 text-end">NT${{ data.price }}</div>
+        <div class="col-6 text-end text-nowrap">NT${{ data.price }}</div>
       </div>
       <div>
         <Router-Link
@@ -84,10 +84,10 @@ export default {
     font-size: 13px;
   }
   .card-text div {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .card-title {
     font-size: 32px;
   }
@@ -100,7 +100,7 @@ export default {
   .card-text div {
     font-size: 23px;
   }
-}
+} */
 .btn-red {
   background-color: #ffb7b7;
 }
