@@ -63,12 +63,12 @@
       </div>
       <div class="mb-3 mb-md-0">
         <Router-Link to="/ThankyouBuy">
-        <button
-          type="button"
-          class=" btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
-        >
-          確認付款
-        </button>
+          <button
+            type="button"
+            class="noborder btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
+          >
+            確認付款
+          </button>
         </Router-Link>
       </div>
     </div>
