@@ -88,7 +88,8 @@
       <p class="h2 mb-4 text-center">免費課程</p>
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
+          style="max-width: 1024px; width: 100%"
         >
           <CardComponent
             :data="item"
@@ -105,7 +106,8 @@
       <p class="h2 mb-4 text-center">啟蒙班</p>
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
+          style="max-width: 1024px"
         >
           <CardComponent
             :data="item"
@@ -122,7 +124,8 @@
       <p class="h2 mb-4 text-center">中級班</p>
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
+          style="max-width: 1024px"
         >
           <CardComponent
             :color="'0'"
@@ -139,7 +142,8 @@
       <p class="h2 mb-4 text-center">高級班</p>
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
+          style="max-width: 1024px"
         >
           <CardComponent
             :data="item"
@@ -156,7 +160,8 @@
       <p class="h2 mb-4 text-center">段位班</p>
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
-          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center" style="max-width: 1024px;"
+          class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
+          style="max-width: 1024px"
         >
           <CardComponent
             :data="item"
@@ -221,7 +226,6 @@ export default {
   },
   mounted() {
     this.getCourse();
-
   },
 };
 </script>

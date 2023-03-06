@@ -4,9 +4,12 @@ import Swal from "sweetalert2";
 export const cartstore = defineStore("cart", {
   state: () => ({
     carts: [],
-    cartnum: [],
   }),
-  getters: {},
+  getters: {
+    getnum(state){
+      return state.carts.length;
+    }
+  },
   actions: {
     getitem() {
       const url = `${import.meta.env.VITE_API}api/${

@@ -72,15 +72,24 @@
           </li>
           <li class="nav-item ps-3">
             <Router-Link
-              class="nav-link fw-bolder text-dark fs-6"
+              class="nav-link fw-bolder text-dark fs-6 position-relative"
               aria-current="page"
               to="/Cartview"
             >
               <img
                 src="../.././src/assets/image/Header/shopping_cart.svg"
-                style="width: 25px; heigth: 25px"
+                style="width: 25px; height: 25px"
                 alt="購物車icon"
-            /></Router-Link>
+                class="position-relative"
+              />
+              <span
+                class="position-absolute top-25 start-75 translate-middle badge rounded-pill"
+                style="background: red"
+              >
+                {{ getnum }}
+                <span class="visually-hidden">items</span>
+              </span>
+            </Router-Link>
           </li>
         </ul>
       </div>
@@ -145,7 +154,7 @@
   </div>
 </template>
 <script>
-import { mapActions } from "pinia";
+import { mapActions, mapState } from "pinia";
 import { cartstore } from "../../src/stores/cart";
 import { RouterView, RouterLink } from "vue-router";
 // import Loading from "vue-loading-overlay";
@@ -161,6 +170,9 @@ export default {
       fullPage: true,
       isLoading: false,
     };
+  },
+  computed: {
+    ...mapState(cartstore, ["getnum"]),
   },
   methods: {
     ...mapActions(cartstore, ["getitem"]),

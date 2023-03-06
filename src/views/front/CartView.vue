@@ -1,14 +1,34 @@
 <template>
   <div class="wrap">
-    <div>
+    <div v-if="carts[0]">
       <stepCirclelist></stepCirclelist>
       <CartItem v-for="i in carts" :key="i.id" :item="i"></CartItem>
       <p class="total-font fw-bold">總計NT$ 7500</p>
       <div class="step-btn">
-        <button type="button fw-bold">下一步,填寫資料</button>
+        <Router-Link to="/WriteData"
+          ><button type="button" class="fw-bold">
+            下一步,填寫資料
+          </button></Router-Link
+        >
+      </div>
+    </div>
+    <div v-else class="text-center step-btn">
+      <p class="fw-bold fs-2 mb-4">無任何訂單</p>
+      <Router-Link to="/CourseOverview"
+        ><button type="button" class="fw-bold rounded-pill">
+          來去逛逛
+        </button></Router-Link
+      >
+      <div class="mt-5">
+        <img
+          src="../../assets/image/購物車頁面/illustration01.svg"
+          alt="無任何訂單圖片"
+          class="img-fluid"
+        />
       </div>
     </div>
   </div>
+  <div></div>
 </template>
 
 <script>
@@ -21,19 +41,11 @@ export default {
     stepCirclelist,
     CartItem,
   },
-  data() {
-    return {
-      item: null,
-    };
-  },
   computed: {
     ...mapState(cartstore, ["carts"]),
   },
-  created() {
-    
-  },
-  mounted() {
-  }
+  created() {},
+  mounted() {},
 };
 </script>
 <style>

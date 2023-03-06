@@ -75,32 +75,32 @@ export default {
     max-width: 385px;
   }
   .card-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .old-price {
-    font-size: 10px;
+    font-size: 7px;
   }
   .card-text p {
-    font-size: 13px;
+    font-size: 11px;
   }
   .card-text div {
-    font-size: 16px;
+    font-size: 11px;
   }
 }
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-title {
-    font-size: 32px;
+    font-size: 26px;
   }
   .old-price {
-    font-size: 16px;
+    font-size: 12px;
   }
   .card-text p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .card-text div {
-    font-size: 23px;
+    font-size: 18px;
   }
-} */
+}
 .btn-red {
   background-color: #ffb7b7;
 }
