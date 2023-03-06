@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap px-5 px-md-3">
+  <div class="WriteDatawrap px-5 px-md-3">
     <StepCirclelist></StepCirclelist>
     <div class="mb-4">
       <label for="email" class="form-label mb-1 fs-5">Email</label>
@@ -91,7 +91,7 @@ export default {
 </script>
 
 <style>
-.wrap {
+.WriteDatawrap {
   max-width: 863px;
   margin: auto;
 }
