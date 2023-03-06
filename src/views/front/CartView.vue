@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="CartViewwrap">
     <div v-if="carts[0]">
       <stepCirclelist></stepCirclelist>
       <CartItem v-for="i in carts" :key="i.id" :item="i"></CartItem>
@@ -49,13 +49,13 @@ export default {
 };
 </script>
 <style>
-.wrap {
+.CartViewwrap {
   padding: 0 80px;
   margin: auto;
   max-width: 1440px;
 }
 @media (max-width: 768px) {
-  .wrap {
+  .CartViewwrap {
     padding: 0 20px;
   }
 }
