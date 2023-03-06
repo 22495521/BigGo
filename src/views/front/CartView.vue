@@ -5,7 +5,7 @@
       <CartItem v-for="i in carts" :key="i.id" :item="i"></CartItem>
       <p class="total-font fw-bold">總計NT$ 7500</p>
       <div class="step-btn">
-        <Router-Link to="/WriteData"
+        <Router-Link to="/WriteData" @click="scrollToTop"
           ><button type="button" class="fw-bold px-5 py-2">
             下一步,填寫資料
           </button></Router-Link
@@ -43,6 +43,11 @@ export default {
   },
   computed: {
     ...mapState(cartstore, ["carts"]),
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
   },
   created() {},
   mounted() {},

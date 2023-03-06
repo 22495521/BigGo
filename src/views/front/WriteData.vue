@@ -65,6 +65,7 @@
       <div class="mb-3 mb-md-0">
         <Router-Link to="/ThankyouBuy">
           <button
+            @click="scrollToTop"
             type="button"
             class="noborder btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
           >
@@ -86,6 +87,9 @@ export default {
     gocartview() {
       this.$router.push("Cartview");
     },
+    scrollToTop() {
+        window.scrollTo(0, 0);
+    }
   },
 };
 </script>
