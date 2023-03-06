@@ -55,7 +55,7 @@
         <Router-Link to="/Cartview">
           <button
             type="button"
-            class="btn btn-lg text-nowrap btn-darklight rounded-pill py-2 px-5 mx-4"
+            class="btndark noborder text-nowrap rounded-pill py-2 px-5 mx-4"
           >
             返回訂單
           </button></Router-Link
@@ -65,7 +65,7 @@
         <Router-Link to="/ThankyouBuy">
           <button
             type="button"
-            class="noborder btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
+            class=" noborder btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
           >
             確認付款
           </button>
@@ -91,6 +91,12 @@ export default {
 }
 .noborder {
   border: none;
+}
+.btndark {
+    background-color: #cccccc;
+}
+.btndark:hover {
+    background-color: #909090;
 }
 .btn-red {
   background-color: #ffb7b7;
