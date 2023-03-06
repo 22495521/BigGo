@@ -84,7 +84,7 @@
               />
               <span
                 class="position-absolute top-25 start-75 translate-middle badge rounded-pill"
-                style="background: red"
+                style="background: #ffffff; color: #ff8080"
               >
                 {{ getnum }}
                 <span class="visually-hidden">items</span>
