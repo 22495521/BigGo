@@ -6,7 +6,7 @@
       <p class="total-font fw-bold">總計NT$ 7500</p>
       <div class="step-btn">
         <Router-Link to="/WriteData"
-          ><button type="button" class="fw-bold">
+          ><button type="button" class="fw-bold px-5 py-2">
             下一步,填寫資料
           </button></Router-Link
         >
@@ -79,8 +79,6 @@ export default {
 .step-btn button {
   border-radius: 1000px;
   border: none;
-  padding: 12px 40px;
-  width: 24px 51px;
   background-color: #ffbfbf;
 }
 .step-btn button:hover {
