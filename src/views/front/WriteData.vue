@@ -65,7 +65,7 @@
         <Router-Link to="/ThankyouBuy">
         <button
           type="button"
-          class="btn btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
+          class=" btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
         >
           確認付款
         </button>

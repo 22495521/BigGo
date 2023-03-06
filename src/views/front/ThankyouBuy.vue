@@ -43,7 +43,7 @@
         <button
           type="button"
           @click="scrollToTop"
-          class="btn btn-red noborder rounded-pill btn-lg px-5 py-2"
+          class="btn-red noborder rounded-pill btn-lg px-5 py-2"
         >
           繼續逛逛
         </button>
