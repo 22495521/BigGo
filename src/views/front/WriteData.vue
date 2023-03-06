@@ -52,20 +52,21 @@
       class="text-center my-5 d-flex flex-column-reverse flex-md-row justify-content-center"
     >
       <div>
-        <Router-Link to="/Cartview">
-          <button
-            type="button"
-            class="btndark noborder text-nowrap rounded-pill py-2 px-5 mx-4"
-          >
-            返回訂單
-          </button></Router-Link
+        <!-- <Router-Link to="/Cartview"> -->
+        <button
+          @click="gocartview"
+          type="button"
+          class="btndark noborder text-nowrap rounded-pill py-2 px-5 mx-4"
         >
+          返回訂單
+        </button>
+        <!-- </Router-Link -->
       </div>
       <div class="mb-3 mb-md-0">
         <Router-Link to="/ThankyouBuy">
           <button
             type="button"
-            class=" noborder btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
+            class="noborder btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4"
           >
             確認付款
           </button>
@@ -81,6 +82,11 @@ export default {
   components: {
     StepCirclelist,
   },
+  methods: {
+    gocartview() {
+      this.$router.push("Cartview");
+    },
+  },
 };
 </script>
 
@@ -93,10 +99,10 @@ export default {
   border: none;
 }
 .btndark {
-    background-color: #cccccc;
+  background-color: #cccccc;
 }
 .btndark:hover {
-    background-color: #909090;
+  background-color: #909090;
 }
 .btn-red {
   background-color: #ffb7b7;
