@@ -107,7 +107,7 @@
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
           class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
-          style="max-width: 1024px"
+          style="max-width: 1024px; width: 100%"
         >
           <CardComponent
             :data="item"
@@ -125,7 +125,7 @@
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
           class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
-          style="max-width: 1024px"
+          style="max-width: 1024px; width: 100%"
         >
           <CardComponent
             :color="'0'"
@@ -143,7 +143,7 @@
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
           class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
-          style="max-width: 1024px"
+          style="max-width: 1024px; width: 100%"
         >
           <CardComponent
             :data="item"
@@ -161,7 +161,7 @@
       <div class="px-md-5 card-padding d-flex justify-content-center">
         <div
           class="d-flex flex-column flex-md-row flex-wrap justify-content-start align-items-center"
-          style="max-width: 1024px"
+          style="max-width: 1024px; width: 100%"
         >
           <CardComponent
             :data="item"
