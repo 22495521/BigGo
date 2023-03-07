@@ -42,7 +42,9 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              <span class="fs-5 fw-bolder">購買的課程有觀看次數或有效期限嗎?</span>
+              <span class="fs-5 fw-bolder"
+                >購買的課程有觀看次數或有效期限嗎?</span
+              >
             </button>
           </h2>
           <div
@@ -142,7 +144,10 @@
 
   <div style="position: relative">
     <div class="img-left pb-0">
-      <img src="../../assets/image/問與答/Section_01_illustration_left.svg" alt="" />
+      <img
+        src="../../assets/image/問與答/Section_01_illustration_left.svg"
+        alt=""
+      />
     </div>
     <div
       class="d-flex justify-content-center flex-column align-items-center pb-md-5 pb-3"
@@ -152,6 +157,7 @@
       </div>
       <div>
         <button
+          @click.prevent="gotoline"
           class="btn btn-success rounded-pill"
           style="width: 25; width: 150px; padding: 10px 32px"
         >
@@ -160,14 +166,28 @@
       </div>
     </div>
     <div class="img-right pb-0">
-      <img src="../../assets/image/問與答/Section_01_illustration_right.svg" alt="" />
+      <img
+        src="../../assets/image/問與答/Section_01_illustration_right.svg"
+        alt=""
+      />
     </div>
     <div class="img-all">
-      <img src="../../assets/image/問與答/Section_01_illustration_all.svg" alt="" />
+      <img
+        src="../../assets/image/問與答/Section_01_illustration_all.svg"
+        alt=""
+      />
     </div>
   </div>
 </template>
-<script></script>
+<script>
+export default {
+  methods: {
+    gotoline() {
+      window.open("https://line.me/ti/p/2W3g70s3MG");
+    },
+  },
+};
+</script>
 
 <style>
 .accordion-border {

@@ -1,6 +1,15 @@
 <template>
-  <StepCirclelist></StepCirclelist>
-  <div class="wrap px-4 px-md-2">
+  <loading v-model:active="isLoading" :can-cancel="false">
+    <div class="loadingio-spinner-dual-ball-laqyobj2qgl">
+      <div class="ldio-sh19xg6jfo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </loading>
+  <StepCirclelist :step="3"></StepCirclelist>
+  <div v-if="order" class="wrap px-4 px-md-2">
     <p class="fs-1 fw-bold text-center">
       <font-awesome-icon icon="thumbs-up" class="me-2" />感謝您的購買!
     </p>
@@ -17,23 +26,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="table-font">
-            <td scope="row" class="ps-4">啟蒙班-入門</td>
-            <td class="text-end pe-4">NT$2500</td>
-          </tr>
-          <tr class="table-font">
-            <td scope="row" class="ps-4">啟蒙班-入門</td>
-            <td class="text-end pe-4">NT$2500</td>
-          </tr>
-          <tr class="table-font">
-            <td scope="row" class="ps-4">啟蒙班-入門</td>
-            <td class="text-end pe-4">NT$2500</td>
+          <tr class="table-font" v-for="item in order.products" :key="item.id">
+            <td scope="row" class="ps-4">
+              {{ item.product.category }}-{{ item.product.title }}
+            </td>
+            <td class="text-end pe-4">NT${{ item.total }}</td>
           </tr>
         </tbody>
         <tfoot>
           <tr class="table-font">
             <td></td>
-            <td class="text-end pe-4">總計NT$7500</td>
+            <td class="text-end pe-4">總計NT${{ order.total }}</td>
           </tr>
         </tfoot>
       </table>
@@ -52,17 +55,49 @@
   </div>
 </template>
 <script>
+import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/css/index.css";
 import StepCirclelist from "../../components/front/StepCirclelist.vue";
 export default {
   components: {
     StepCirclelist,
+    Loading,
+  },
+  data() {
+    return {
+      isLoading: false,
+      order: null,
+      orderId: null,
+    };
   },
   methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
+    getbuyorder() {
+      this.isLoading = true;
+      const url = `${import.meta.env.VITE_API}api/${
+        import.meta.env.VITE_APIPATH
+      }/order/${this.orderId}`;
+      this.$http
+        .get(url)
+        .then((res) => {
+          this.order = res.data.order;
+          if (!this.order) {
+            this.$router.push("FrontPage");
+          }
+          this.isLoading = false;
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+    },
   },
-
+  created() {
+    this.orderId = this.$route.query.id;
+    this.getbuyorder();
+  },
+  mounted() {},
 };
 </script>
 

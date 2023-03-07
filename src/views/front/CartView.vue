@@ -1,7 +1,7 @@
 <template>
   <div class="CartViewwrap">
     <div v-if="carts[0]">
-      <stepCirclelist></stepCirclelist>
+      <stepCirclelist :step="1"></stepCirclelist>
       <CartItem v-for="i in carts" :key="i.id" :item="i"></CartItem>
       <p class="total-font fw-bold">總計NT$ 7500</p>
       <div class="step-btn">
@@ -15,7 +15,7 @@
     <div v-else class="text-center step-btn">
       <p class="fw-bold fs-2 mb-4">無任何訂單</p>
       <Router-Link to="/CourseOverview"
-        ><button type="button" class="fw-bold rounded-pill">
+        ><button type="button" class="fw-bold rounded-pill fs-5 px-5 py-2">
           來去逛逛
         </button></Router-Link
       >

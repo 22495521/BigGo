@@ -31,6 +31,7 @@
             <div class="d-flex justify-content-center text-nowrap">
               <button
                 href="#"
+                @click="getocalss1"
                 class="btn btn-primary btn btn-success rounded-pill"
                 style="
                   padding: 3% 39%;
@@ -71,6 +72,7 @@
             <div class="d-flex justify-content-center text-nowrap">
               <button
                 href="#"
+                @click="getocalss2"
                 class="btn btn-primary btn btn-success rounded-pill"
                 style="
                   padding: 3% 39%;
@@ -111,6 +113,7 @@
             <div class="d-flex justify-content-center text-nowrap">
               <button
                 href="#"
+                @click="getocalss3"
                 class="btn btn-primary btn btn-success rounded-pill"
                 style="
                   padding: 3% 39%;
@@ -144,6 +147,16 @@ export default {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
+    getocalss1() {
+      this.$router.push("/Course/-NP8JPFD2Ey9xb8JELao");
+    },
+    getocalss2() {
+      this.$router.push("/Course/-NP8Let03TYkz4yRIeun");
+    },
+    getocalss3() {
+      this.$router.push("/Course/-NPN5S2lUy0M1lpQpMQW");
+    },
   },
+
 };
 </script>

@@ -6,9 +6,9 @@ export const cartstore = defineStore("cart", {
     carts: [],
   }),
   getters: {
-    getnum(state){
+    getnum(state) {
       return state.carts.length;
-    }
+    },
   },
   actions: {
     getitem() {

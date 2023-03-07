@@ -232,10 +232,9 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/css/index.css";
 import { mapActions } from "pinia";
 import { cartstore } from "../../stores/cart";
-import "vue-loading-overlay/dist/css/index.css";
-
 export default {
   components: {
     Loading,
