@@ -47,8 +47,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ps-3">
             <Router-Link
-              @click="chagepage(1)"
-              :class="{ 'layoutmark-pen': nowPgae == 1 }"
+            :class="{ 'layoutmark-pen': $route.path === '/FrontPage' }"
               class="nav-link fw-bolder text-dark fs-6"
               aria-current="page"
               to="/FrontPage"
@@ -57,9 +56,8 @@
           </li>
           <li class="nav-item ps-3">
             <Router-Link
-              @click="chagepage(2)"
               class="nav-link fw-bolder text-dark fs-6"
-              :class="{ 'layoutmark-pen': nowPgae == 2 }"
+              :class="{ 'layoutmark-pen': $route.path === '/CourseOverview' }"
               aria-current="page"
               to="/CourseOverview"
               >課程總覽</Router-Link
@@ -68,9 +66,8 @@
 
           <li class="nav-item ps-3">
             <Router-Link
-              @click="chagepage(3)"
               class="nav-link fw-bolder text-dark fs-6"
-              :class="{ 'layoutmark-pen': nowPgae == 3 }"
+              :class="{ 'layoutmark-pen': $route.path === '/Quesiton' }"
               aria-current="page"
               to="/Quesiton"
               >問與答</Router-Link
@@ -184,28 +181,6 @@ export default {
   },
   methods: {
     ...mapActions(cartstore, ["getitem"]),
-    whetepage() {
-      let page = this.$route.path;
-      console.log(page);
-      if (page == "/FrontPage") {
-        console.log(1);
-        this.nowPgae == 1;
-        console.log(this.nowPgae);
-      } else if (page == "/CourseOverview") {
-        console.log(2)
-        this.nowPgae == 2;
-        console.log(this.nowPgae);
-      } else if (page == "/Quesiton") {
-        console.log(3)
-        this.nowPgae == 3;
-        console.log(this.nowPgae);
-      } else {
-        console.log("其他頁面");
-        console.log(4);
-        this.nowPgae == 4;
-        console.log(this.nowPgae);
-      }
-    },
 
     chagepage(page) {
       this.nowPgae = page;
@@ -213,7 +188,6 @@ export default {
   },
   mounted() {
     this.getitem();
-    this.whetepage();
   },
  
 };
