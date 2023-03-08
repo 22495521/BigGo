@@ -11,7 +11,7 @@
     />
     <div class="card-body">
       <div class="row">
-        <p class="card-title col-6 mb-0 text-nowrap">{{ data.title }}</p>
+        <p class="card-title col-6 mb-0 text-nowrap fw-bolder">{{ data.title }}</p>
         <div
           class="col-6 text-end text-decoration-line-through old-price d-flex justify-content-end align-items-end"
           style="color: #909090"

@@ -14,7 +14,7 @@
     </div>
     <div class="container pt-4 bg-white">
       <div class="row justify-content-center m-t pt-7 pt-md-4">
-        <div class="fs-2 text-center mb-md-1" style="font-weight: 700;">
+        <div class="fs-2 text-center mb-md-1" style="font-weight: 700">
           線上從0開始打造圍<br class="d-md-none" />棋思維
         </div>
         <div class="col-md-10">
@@ -28,6 +28,7 @@
                   src="../../assets/image/首頁/Section_02_illustration01.svg"
                   alt=""
                 />
+                <!-- <div ref="animationContainer" style="max-height:250px ; max-width:250px ;" class="img-fl"></div> -->
                 <p class="fs-4 mt-3 fw-bolder">
                   從啟蒙到段位<br class="d-md-block d-none" />循序漸進
                 </p>
@@ -69,6 +70,8 @@
 </template>
 
 <script>
+// import lottie from 'lottie-web';
+// import animationData from '../../assets/lottie/Aniki Hamster.json';
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default {
@@ -79,11 +82,18 @@ export default {
       easing: "ease", // default easing for AOS animations
       once: false, // whether animation should happen only once - while scrolling down
     });
+
+    // lottie.loadAnimation({
+    //   container: this.$refs.animationContainer,
+    //   renderer: 'svg',
+    //   loop: true,
+    //   autoplay: true,
+    //   animationData: animationData
+    // });
   },
 };
 </script>
 <style>
-
 .balloon1 {
   position: absolute;
   right: 10%;
