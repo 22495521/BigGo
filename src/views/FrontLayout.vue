@@ -47,7 +47,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ps-3">
             <Router-Link
-            :class="{ 'layoutmark-pen': $route.path === '/FrontPage' }"
+              :class="{ 'layoutmark-pen': $route.path === '/FrontPage' }"
               class="nav-link fw-bolder text-dark fs-6"
               aria-current="page"
               to="/FrontPage"
@@ -108,7 +108,7 @@
         <img src="../assets/image/header/Logo.svg" alt="" />
       </div>
       <div>
-        <a href="#">
+        <a href="https://line.me/ti/p/2W3g70s3MG" target="_blank">
           <img
             class="me-3"
             src="../assets/image/footer/icon_line.svg"
@@ -116,7 +116,7 @@
             height="33px"
             alt=""
         /></a>
-        <a href="#">
+        <a href="https://www.google.com.tw/" target="_blank">
           <img
             class="me-3"
             src="../assets/image/footer/icon_mail.svg"
@@ -124,7 +124,7 @@
             height="33px"
             alt=""
         /></a>
-        <a href="#">
+        <a href="https://www.facebook.com/" target="_blank">
           <img
             class="me-3"
             src="../assets/image/footer/icon_facebook.svg"
@@ -133,7 +133,7 @@
             alt=""
           />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/" target="_blank">
           <img
             src="../assets/image/footer/icon_instagram.svg"
             width="33px"
@@ -185,11 +185,16 @@ export default {
     chagepage(page) {
       this.nowPgae = page;
     },
+    gotoLine() {
+      window.open("https://line.me/ti/p/2W3g70s3MG");
+    },
+    gotoFB() {},
+    gotoeEail() {},
+    gotoIG() {},
   },
   mounted() {
     this.getitem();
   },
- 
 };
 </script>
 
