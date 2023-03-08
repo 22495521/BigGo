@@ -28,7 +28,11 @@
                   src="../../assets/image/首頁/Section_02_illustration01.svg"
                   alt=""
                 />
-                <!-- <div ref="animationContainer" style="max-height:250px ; max-width:250px ;" class="img-fl"></div> -->
+                <!-- <div
+                  ref="animationContainer"
+                  style="max-height: 250px; max-width: 250px"
+                  class="img-fluid"
+                ></div> -->
                 <p class="fs-4 mt-3 fw-bolder">
                   從啟蒙到段位<br class="d-md-block d-none" />循序漸進
                 </p>
@@ -70,8 +74,8 @@
 </template>
 
 <script>
-// import lottie from 'lottie-web';
-// import animationData from '../../assets/lottie/Aniki Hamster.json';
+import lottie from "lottie-web";
+import animationData from "../../assets/image/首頁/Section_02_illustration01.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default {
@@ -83,13 +87,13 @@ export default {
       once: false, // whether animation should happen only once - while scrolling down
     });
 
-    // lottie.loadAnimation({
-    //   container: this.$refs.animationContainer,
-    //   renderer: 'svg',
-    //   loop: true,
-    //   autoplay: true,
-    //   animationData: animationData
-    // });
+    lottie.loadAnimation({
+      container: this.$refs.animationContainer,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+    });
   },
 };
 </script>
