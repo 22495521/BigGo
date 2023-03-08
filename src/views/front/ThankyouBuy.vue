@@ -13,7 +13,7 @@
     <p class="fs-1 fw-bold text-center">
       <font-awesome-icon icon="thumbs-up" class="me-2" />感謝您的購買!
     </p>
-    <p class="fs-4 text-center">
+    <p class="fs-4 text-center mb-4">
       已傳送課程連結至您的信箱，若有任何問題歡迎聯絡我們。
     </p>
     <div class="p-3 p-md-5 mb-4" style="background-color: #f6f6f6">
