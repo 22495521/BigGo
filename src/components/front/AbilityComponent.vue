@@ -186,6 +186,7 @@ export default {
 }
 @media (max-width: 768px) {
   .drow-img {
+    top: 25px;
     left: 198px;
     width: 137px;
     height: 49px;
