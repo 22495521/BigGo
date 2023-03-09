@@ -21,18 +21,18 @@
           <ul class="d-flex flex-column flex-md-row justify-content-between">
             <li class="text-center list-unstyled">
               <div>
-                <!-- <img
+                <img
                   height="250px"
                   width="250px"
                   class="img-fluid"
                   src="../../assets/image/首頁/Section_02_illustration01.svg"
                   alt=""
-                /> -->
-                <div
+                />
+                <!-- <div
                   ref="animationContainer"
                   style="max-width: 100%; height: auto"
                   class="img-fluid"
-                ></div>
+                ></div> -->
                 <p class="fs-4 mt-3 fw-bolder">
                   從啟蒙到段位<br class="d-md-block d-none" />循序漸進
                 </p>
