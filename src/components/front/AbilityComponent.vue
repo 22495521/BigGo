@@ -19,7 +19,6 @@
           alt=""
         />
         <div class="px-md-4 py-3 py-md-0">
-          <img src="../../assets/image/首頁/" alt="" />
           <h4>集中專注力</h4>
           <p class="fs-4 py-2 py-md-0">
             下一盤圍棋大約30分鐘至1小時,須全程集中精神、不可鬆懈。
