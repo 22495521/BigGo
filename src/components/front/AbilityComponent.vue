@@ -9,8 +9,17 @@
           alt=""
         />
       </div>
-      <div class="pt-3 d-md-flex flex-md-column justify-content-center card-w">
+      <div
+        class="pt-3 d-md-flex flex-md-column justify-content-center card-w"
+        style="position: relative"
+      >
+        <img
+          src="../../assets/image/首頁/Section_04_illustration01.svg"
+          class="drow-img img-fluid"
+          alt=""
+        />
         <div class="px-md-4 py-3 py-md-0">
+          <img src="../../assets/image/首頁/" alt="" />
           <h4>集中專注力</h4>
           <p class="fs-4 py-2 py-md-0">
             下一盤圍棋大約30分鐘至1小時,須全程集中精神、不可鬆懈。
@@ -30,7 +39,15 @@
           alt=""
         />
       </div>
-      <div class="pt-3 d-md-flex flex-md-column justify-content-center card-w">
+      <div
+        class="pt-3 d-md-flex flex-md-column justify-content-center card-w"
+        style="position: relative"
+      >
+        <img
+          src="../../assets/image/首頁/Section_04_illustration02.svg"
+          class="img-fluid flower"
+          alt=""
+        />
         <div class="px-md-4 py-3 py-md-0">
           <h4>獨立思考</h4>
           <p class="fs-4 py-2 py-md-0">
@@ -47,7 +64,15 @@
           alt=""
         />
       </div>
-      <div class="pt-3 d-md-flex flex-md-column justify-content-center card-w">
+      <div
+        class="pt-3 d-md-flex flex-md-column justify-content-center card-w"
+        style="position: relative"
+      >
+        <img
+          src="../../assets/image/首頁/Section_04_illustration03.svg"
+          class="img-fluid chr"
+          alt=""
+        />
         <div class="px-md-4 py-3 py-md-0">
           <h4>抗壓能力</h4>
           <p class="fs-4 py-2 py-md-0">
@@ -83,6 +108,88 @@ export default {
   }
   .card-radius {
     border-radius: 32px;
+  }
+}
+
+.chr {
+  width: 287px;
+  height: 202px;
+  position: absolute;
+  bottom: 41px;
+  right: 28px;
+}
+
+@media (max-width: 1200px) {
+  .chr {
+    bottom: 0px;
+    width: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .chr {
+    bottom: -20px;
+  }
+}
+@media (max-width: 768px) {
+  .chr {
+    bottom: 70px;
+  }
+}
+
+.flower {
+  width: 190px;
+  height: 174px;
+  position: absolute;
+  right: 77px;
+  bottom: 45px;
+}
+
+@media (max-width: 1200px) {
+  .flower {
+    bottom: 0px;
+  }
+}
+@media (max-width: 1000px) {
+  .flower {
+    width: 100px;
+    height: 90px;
+    bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .flower {
+    width: 95px;
+    width: 87px;
+    bottom: 120px;
+  }
+}
+
+.drow-img {
+  position: absolute;
+  width: 339px;
+  height: 121px;
+  left: 67px;
+  top: 68px;
+}
+@media (max-width: 1200px) {
+  .drow-img {
+    width: 175px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .drow-img {
+    top: 40px;
+    width: 175px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .drow-img {
+    left: 198px;
+    width: 137px;
+    height: 49px;
   }
 }
 </style>
