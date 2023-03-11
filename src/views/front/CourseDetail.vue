@@ -33,7 +33,8 @@
           class="p-3 py-lg-7 flex-md-row justify-content-md-center"
           style="
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-            border-radius: 12px;"
+            border-radius: 12px;
+          "
         >
           <div class="d-flex flex-column flex-lg-row">
             <div class="rowwidth d-flex align-items-start">
@@ -77,7 +78,10 @@
             <button
               type="button"
               class="btn rounded-pill fs-5 text-nowrap btn-lg addcartbtn"
-              :class="{ btnred: color == 'red', btnyellow: color == 'yellow' }"
+              :class="{
+                'course-btn-red': color == 'red',
+                'course-btn-yellow': color == 'yellow',
+              }"
               @click="additem(product)"
             >
               <i class="bi bi-cart-fill me-3 btn-icon"></i>加入購物車
@@ -352,18 +356,18 @@ export default {
 .btn-icon {
   font-size: 1.5rem;
 }
-.btnred {
-  border: none;
-  background-color: #ffdfa0;
-}
-.btnred:hover {
-  background-color: #ff8080;
-}
-.btnyellow {
+.course-btn-red {
   border: none;
   background-color: #ffdfd0;
 }
-.btnyellow:hover {
+.course-btn-red:hover {
+  background-color: #ff8080;
+}
+.course-btn-yellow {
+  border: none;
+  background-color: #ffdfa0;
+}
+.course-btn-yellow:hover {
   background-color: #ffc655;
 }
 
