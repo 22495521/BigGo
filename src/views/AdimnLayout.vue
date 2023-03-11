@@ -48,7 +48,8 @@
           </li>
 
           <li class="nav-item ps-3">
-            <a href="#"
+            <a
+              href="#"
               class="nav-link fw-bolder text-dark fs-6"
               @click.prevent="SignOut"
             >
