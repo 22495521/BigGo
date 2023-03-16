@@ -28,9 +28,10 @@
       <div>
         <Router-Link
           :class="[color == 1 ? 'card-btn-red' : 'card-btn-yellow']"
-          class="btn w-100 border border-2 border-dark"
+          class="btn border border-2 border-dark"
           @click="scrollToTop"
           style="
+                  width: 100%;
                   padding:7px 15px
                   border: 3px solid #6f6f6f;
                   border-radius: 640px;"
@@ -106,13 +107,15 @@ export default {
 .card-btn-red {
   background-color: #ffb7b7;
 }
-.card-btn-red:hover {
+.card-btn-red:hover,
+.card-btn-red:active {
   background-color: #ff8080;
 }
 .card-btn-yellow {
   background-color: #ffdfa0;
 }
-.card-btn-yellow:hover {
+.card-btn-yellow:hover,
+.card-btn-yellow:active {
   background-color: #ffc655;
 }
 </style>

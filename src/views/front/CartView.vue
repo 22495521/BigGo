@@ -86,7 +86,8 @@ export default {
   border: none;
   background-color: #ffbfbf;
 }
-.step-btn button:hover {
+.step-btn button:hover,
+.step-btn button:active {
   background-color: #ff8080;
 }
 </style>

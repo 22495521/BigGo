@@ -172,13 +172,15 @@ export default {
 .btndark {
   background-color: #cccccc;
 }
-.btndark:hover {
+.btndark:hover,
+.btndark:active {
   background-color: #909090;
 }
 .btn-red {
   background-color: #ffb7b7;
 }
-.btn-red:hover {
+.btn-red:hover,
+.btn-red:active {
   background-color: #ff8080;
 }
 </style>

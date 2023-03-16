@@ -129,7 +129,8 @@ export default {
 .btn-red {
   background-color: #ffb7b7;
 }
-.btn-red:hover {
+.btn-red:hover,
+.btn-red:active {
   background-color: #ff8080;
 }
 </style>

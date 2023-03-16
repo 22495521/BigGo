@@ -77,7 +77,7 @@
           <div class="text-md-end text-center mt-5 py-2">
             <button
               type="button"
-              class="btn rounded-pill fs-5 text-nowrap btn-lg addcartbtn"
+              class="rounded-pill fs-5 text-nowrap btn-lg addcartbtn"
               :class="{
                 'course-btn-red': color == 'red',
                 'course-btn-yellow': color == 'yellow',
@@ -360,14 +360,16 @@ export default {
   border: none;
   background-color: #ffdfd0;
 }
-.course-btn-red:hover {
+.course-btn-red:hover,
+.course-btn-red:active {
   background-color: #ff8080;
 }
 .course-btn-yellow {
   border: none;
   background-color: #ffdfa0;
 }
-.course-btn-yellow:hover {
+.course-btn-yellow:hover,
+.course-btn-yellow:active {
   background-color: #ffc655;
 }
 
