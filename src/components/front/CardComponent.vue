@@ -57,7 +57,7 @@ export default {
 
 <style>
 .card-list {
-  width: 60%;
+  width: 85%;
 }
 .card-title {
   font-size: 25px;
