@@ -134,6 +134,13 @@ export default {
     bottom: 70px;
   }
 }
+@media (max-width: 415px) {
+  .chr {
+    bottom: 95px;
+    right: -13px;
+    width: 120px;
+  }
+}
 
 .flower {
   width: 190px;
@@ -157,9 +164,14 @@ export default {
 }
 @media (max-width: 768px) {
   .flower {
-    width: 95px;
     width: 87px;
     bottom: 120px;
+  }
+}
+@media (max-width: 415px) {
+  .flower {
+    bottom: 151px;
+    right: 40px;
   }
 }
 
@@ -190,6 +202,11 @@ export default {
     left: 198px;
     width: 137px;
     height: 49px;
+  }
+}
+@media (max-width: 415px) {
+  .drow-img {
+    left: 98px;
   }
 }
 </style>
