@@ -234,6 +234,12 @@ export default {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 104px 104px 0px 0px;
 }
+
+@media screen and (max-width: 768px) {
+  .course-radius {
+    border-radius: 56px 56px 0px 0px;
+  }
+}
 .notActive {
   background: white;
 }
