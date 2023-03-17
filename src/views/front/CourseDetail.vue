@@ -201,7 +201,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-5 px-5 px-md-0">
+      <div class="mb-5 px-4 px-md-0">
         <h2
           class="fw-bolder text-center text-md-start"
           style="font-size: 40px; margin-top: 80px; margin-bottom: 40px"
