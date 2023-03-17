@@ -21,18 +21,12 @@
           <ul class="d-flex flex-column flex-md-row justify-content-between">
             <li class="text-center list-unstyled">
               <div>
-                <img
-                  height="250px"
-                  width="250px"
-                  class="img-fluid"
-                  src="../../assets/image/首頁/Section_02_illustration01.svg"
-                  alt=""
-                />
-                <!-- <div
-                  ref="animationContainer"
-                  style="max-width: 100%; height: auto"
-                  class="img-fluid"
-                ></div> -->
+                <div class="container-lottie">
+                  <Vue3Lottie
+                    class="lottie-animation"
+                    :animationData="animation1"
+                  />
+                </div>
                 <p class="fs-4 mt-3 fw-bolder">
                   從啟蒙到段位<br class="d-md-block d-none" />循序漸進
                 </p>
@@ -40,13 +34,19 @@
             </li>
             <li class="text-center list-unstyled">
               <div>
-                <img
+                <!-- <img
                   height="250px"
                   width="250px"
                   class="img-fluid"
                   src="../../assets/image/首頁/Section_02_illustration02.svg"
                   alt=""
-                />
+                /> -->
+                <div class="container-lottie">
+                  <Vue3Lottie
+                    class="lottie-animation"
+                    :animationData="animation2"
+                  />
+                </div>
                 <p class="fs-4 mt-3 fw-bolder">
                   把枯燥變成有<br class="d-md-block d-none" />趣的教學方式
                 </p>
@@ -54,13 +54,19 @@
             </li>
             <li class="text-center list-unstyled">
               <div>
-                <img
+                <!-- <img
                   height="250px"
                   width="250px"
                   class="img-fluid"
                   src="../../assets/image/首頁/Section_02_illustration03.svg"
                   alt=""
-                />
+                /> -->
+                <div class="container-lottie">
+                  <Vue3Lottie
+                    class="lottie-animation"
+                    :animationData="animation3"
+                  />
+                </div>
                 <p class="fs-4 mt-3 fw-bolder">
                   超過一百位學<br class="d-md-block d-none" />員成功晉段
                 </p>
@@ -74,25 +80,30 @@
 </template>
 
 <script>
-import lottie from "lottie-web";
-import animationData from "../../assets/image/首頁/Section_02_illustration01.json";
+import { Vue3Lottie } from "vue3-lottie";
+import "vue3-lottie/dist/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import animation1 from "../../assets/image/首頁/Section_02_illustration01.json";
+import animation2 from "../../assets/image/首頁/Section_02_illustration02.json";
+import animation3 from "../../assets/image/首頁/Section_02_illustration03.json";
 export default {
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      animation3,
+      animation2,
+      animation1,
+    };
+  },
   mounted() {
     AOS.init({
       delay: 0, // values from 0 to 3000, with step 50ms
       duration: 1000,
       easing: "ease", // default easing for AOS animations
       once: false, // whether animation should happen only once - while scrolling down
-    });
-
-    lottie.loadAnimation({
-      container: this.$refs.animationContainer,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: animationData,
     });
   },
 };
@@ -125,5 +136,14 @@ export default {
   .balloon2 {
     display: none;
   }
+}
+.container-lottie {
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto;
+}
+.lottie-animation {
+  width: 100%;
+  height: 100%;
 }
 </style>
