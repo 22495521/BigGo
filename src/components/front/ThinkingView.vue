@@ -18,7 +18,9 @@
           線上從0開始打造圍<br class="d-md-none" />棋思維
         </div>
         <div class="col-md-10">
-          <ul class="d-flex flex-column flex-md-row justify-content-between">
+          <ul
+            class="d-flex flex-column flex-md-row justify-content-between ps-0"
+          >
             <li class="text-center list-unstyled">
               <div>
                 <div class="container-lottie">
