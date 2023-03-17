@@ -3,7 +3,7 @@
     <div v-if="carts[0]">
       <stepCirclelist :step="1"></stepCirclelist>
       <CartItem v-for="i in carts" :key="i.id" :item="i"></CartItem>
-      <p class="total-font fw-bold">總計NT$ 7500</p>
+      <p class="total-font fw-bold">總計NT$ {{ gettal }}</p>
       <div class="step-btn">
         <Router-Link to="/WriteData" @click="scrollToTop"
           ><button type="button" class="fw-bold px-5 py-2">
@@ -41,7 +41,13 @@ export default {
     stepCirclelist,
     CartItem,
   },
+  data() {
+    return {
+      total: null,
+    };
+  },
   computed: {
+    ...mapState(cartstore, ["gettal"]),
     ...mapState(cartstore, ["carts"]),
   },
   methods: {

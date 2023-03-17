@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="trash-icon">
-      <button type="button" class="border-0" @click="deleteitem(item.id)">
+      <button type="button" class="border-0" @click="DeleteItem(item.id)">
         <i class="bi bi-trash3-fill"></i>
       </button>
     </div>
@@ -25,6 +25,9 @@ export default {
   props: ["item"],
   methods: {
     ...mapActions(cartstore, ["deleteitem"]),
+    DeleteItem(id) {
+      this.deleteitem(id);
+    },
   },
 };
 </script>

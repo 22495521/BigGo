@@ -9,6 +9,13 @@ export const cartstore = defineStore("cart", {
     getnum(state) {
       return state.carts.length;
     },
+    gettal(state) {
+      let total = 0;
+      state.carts.forEach((item) => {
+        total += item.final_total;
+      });
+      return total;
+    },
   },
   actions: {
     getitem() {
@@ -19,6 +26,7 @@ export const cartstore = defineStore("cart", {
         .get(url)
         .then((res) => {
           this.carts = res.data.data.carts;
+          console.log(this.carts);
         })
         .catch((err) => {
           console.log(err);
