@@ -77,7 +77,7 @@
           <div class="text-md-end text-center mt-5 py-2">
             <button
               type="button"
-              class="rounded-pill fs-5 text-nowrap btn-lg addcartbtn"
+              class="rounded-pill fs-5 text-nowrap btn-lg addcartbtn text-dark"
               :class="{
                 'course-btn-red': color == 'red',
                 'course-btn-yellow': color == 'yellow',
@@ -169,7 +169,7 @@
           </div>
         </div>
       </div>
-      <div class="px-5 px-md-0">
+      <div class="px-4 px-md-0">
         <h2
           class="fw-bolder text-center text-md-start"
           style="font-size: 40px; margin-top: 80px; margin-bottom: 40px"

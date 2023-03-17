@@ -17,7 +17,7 @@
       type="button"
       :class="{ isActive: selectedTag == '', notActive: selectedTag != '' }"
       style="width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 rounded-pill"
+      class="me-3 rounded-pill text-dark"
     >
       所有課程
     </button>
@@ -29,7 +29,7 @@
       }"
       type="button"
       style="width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 rounded-pill"
+      class="me-3 rounded-pill text-dark"
     >
       免費課程
     </button>
@@ -41,7 +41,7 @@
       }"
       type="button"
       style="width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 rounded-pill"
+      class="me-3 rounded-pill text-dark"
     >
       啟蒙課程
     </button>
@@ -53,7 +53,7 @@
       }"
       type="button"
       style="width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 rounded-pill"
+      class="me-3 rounded-pill text-dark"
     >
       中級課程
     </button>
@@ -65,7 +65,7 @@
       }"
       type="button"
       style="width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 rounded-pill"
+      class="me-3 rounded-pill text-dark"
     >
       高級課程
     </button>
@@ -77,7 +77,7 @@
       }"
       type="button"
       style="width: 128px; height: 51px; padding: 12px 30px"
-      class="me-3 rounded-pill"
+      class="me-3 rounded-pill text-dark"
     >
       段位課程
     </button>
