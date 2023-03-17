@@ -13,7 +13,7 @@
       />
     </div>
     <div class="container pt-4 bg-white">
-      <div class="row justify-content-center m-t pt-7 pt-md-4">
+      <div class="row justify-content-center m-t pt-3 pt-md-4">
         <div class="fs-2 text-center mb-md-1" style="font-weight: 700">
           線上從0開始打造圍<br class="d-md-none" />棋思維
         </div>
