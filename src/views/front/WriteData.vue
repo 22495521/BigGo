@@ -78,7 +78,7 @@
           <button
             @click.prevent="backCart"
             type="button"
-            class="btndark noborder text-nowrap rounded-pill py-2 px-5 mx-4 text-dark"
+            class="btndark noborder fw-normal text-nowrap rounded-pill py-2 px-5 mx-4 text-dark"
           >
             返回訂單
           </button>
@@ -87,7 +87,7 @@
           <button
             :disabled="carts.length == 0"
             type="submit"
-            class="noborder btn-lg text-nowrap btn-red rounded-pill py-2 px-5 mx-4 text-dark"
+            class="noborder btn-lg fw-normal text-nowrap btn-red rounded-pill py-2 px-5 mx-4 text-dark"
           >
             確認付款
           </button>
