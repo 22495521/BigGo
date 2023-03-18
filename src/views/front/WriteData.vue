@@ -87,7 +87,7 @@
           <button
             :disabled="carts.length == 0"
             type="submit"
-            class="noborder btn-lg fw-bolder text-nowrap btn-red rounded-pill py-2 px-5 mx-4 text-dark"
+            class="noborder fw-bolder btn-lg fw-bolder text-nowrap btn-red rounded-pill py-2 px-5 mx-4 text-dark"
           >
             確認付款
           </button>
