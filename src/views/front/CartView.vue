@@ -6,7 +6,7 @@
       <p class="total-font fw-bold">總計NT$ {{ gettal }}</p>
       <div class="step-btn">
         <Router-Link to="/WriteData" @click="scrollToTop"
-          ><button type="button" class="fw-bold px-5 py-2">
+          ><button type="button" class="fw-bold px-5 py-2 text-dark">
             下一步,填寫資料
           </button></Router-Link
         >
