@@ -13,7 +13,7 @@
       </div>
     </div>
   </loading> -->
-  <nav class="navbar navbar-expand-md navbar-light bg-primary">
+  <nav class="navbar navbar-expand-md navbar-light bg-primary" ref="navbar">
     <div class="container-fluid">
       <Router-Link
         class="nav-link fw-bolder text-dark fs-6"
@@ -41,6 +41,7 @@
       </button>
       <div
         class="collapse navbar-collapse pe-3"
+        :class="{ hide: ishide }"
         id="navbarText"
         ref="navbarText"
       >
@@ -49,7 +50,7 @@
             <Router-Link
               :class="{ 'layoutmark-pen': $route.path === '/FrontPage' }"
               class="nav-link fw-bolder text-dark fs-6"
-              @click="closetab"
+              @click="closenavbar"
               aria-current="page"
               to="/FrontPage"
               >首頁</Router-Link
@@ -57,9 +58,9 @@
           </li>
           <li class="nav-item ps-3">
             <Router-Link
+              @click="closenavbar"
               class="nav-link fw-bolder text-dark fs-6"
               :class="{ 'layoutmark-pen': $route.path === '/CourseOverview' }"
-              @click="closetab"
               aria-current="page"
               to="/CourseOverview"
               >課程總覽</Router-Link
@@ -68,9 +69,9 @@
 
           <li class="nav-item ps-3">
             <Router-Link
+              @click="closenavbar"
               class="nav-link fw-bolder text-dark fs-6"
               :class="{ 'layoutmark-pen': $route.path === '/Quesiton' }"
-              @click="closetab"
               aria-current="page"
               to="/Quesiton"
               >問與答</Router-Link
@@ -164,7 +165,7 @@
 import { mapActions, mapState } from "pinia";
 import { cartstore } from "../../src/stores/cart";
 import { RouterView, RouterLink } from "vue-router";
-import collapse from "bootstrap/js/dist/collapse";
+import Tab from "bootstrap/js/dist/tab";
 
 // import Loading from "vue-loading-overlay";
 // import "vue-loading-overlay/dist/css/index.css";
@@ -179,7 +180,7 @@ export default {
       fullPage: true,
       isLoading: false,
       nowPgae: null,
-      navbar: null,
+      ishide: false,
     };
   },
   computed: {
@@ -190,18 +191,18 @@ export default {
 
     chagepage(page) {
       this.nowPgae = page;
-      this.closetab();
+      this.closenavbar();
     },
     gotoLine() {
       window.open("https://line.me/ti/p/2W3g70s3MG");
     },
-    closetab() {
-      this.navbar.hide();
+    closenavbar() {
+      this.ishide = !this.ishide;
     },
   },
   mounted() {
     console.log(this.$refs.navbar);
-    this.navbar = new collapse(this.$refs.navbarText);
+    this.navbar = new Tab(this.$refs.navbar);
     this.getitem();
   },
 };
