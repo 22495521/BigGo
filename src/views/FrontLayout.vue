@@ -49,6 +49,7 @@
             <Router-Link
               :class="{ 'layoutmark-pen': $route.path === '/FrontPage' }"
               class="nav-link fw-bolder text-dark fs-6"
+              @click="closetab"
               aria-current="page"
               to="/FrontPage"
               >首頁</Router-Link
@@ -58,6 +59,7 @@
             <Router-Link
               class="nav-link fw-bolder text-dark fs-6"
               :class="{ 'layoutmark-pen': $route.path === '/CourseOverview' }"
+              @click="closetab"
               aria-current="page"
               to="/CourseOverview"
               >課程總覽</Router-Link
@@ -68,6 +70,7 @@
             <Router-Link
               class="nav-link fw-bolder text-dark fs-6"
               :class="{ 'layoutmark-pen': $route.path === '/Quesiton' }"
+              @click="closetab"
               aria-current="page"
               to="/Quesiton"
               >問與答</Router-Link
@@ -161,6 +164,8 @@
 import { mapActions, mapState } from "pinia";
 import { cartstore } from "../../src/stores/cart";
 import { RouterView, RouterLink } from "vue-router";
+import collapse from "bootstrap/js/dist/collapse";
+
 // import Loading from "vue-loading-overlay";
 // import "vue-loading-overlay/dist/css/index.css";
 export default {
@@ -174,6 +179,7 @@ export default {
       fullPage: true,
       isLoading: false,
       nowPgae: null,
+      navbar: null,
     };
   },
   computed: {
@@ -184,15 +190,18 @@ export default {
 
     chagepage(page) {
       this.nowPgae = page;
+      this.closetab();
     },
     gotoLine() {
       window.open("https://line.me/ti/p/2W3g70s3MG");
     },
-    gotoFB() {},
-    gotoeEail() {},
-    gotoIG() {},
+    closetab() {
+      this.navbar.hide();
+    },
   },
   mounted() {
+    console.log(this.$refs.navbar);
+    this.navbar = new collapse(this.$refs.navbarText);
     this.getitem();
   },
 };

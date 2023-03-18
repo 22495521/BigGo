@@ -26,7 +26,6 @@ export const cartstore = defineStore("cart", {
         .get(url)
         .then((res) => {
           this.carts = res.data.data.carts;
-          console.log(this.carts);
         })
         .catch((err) => {
           console.log(err);
