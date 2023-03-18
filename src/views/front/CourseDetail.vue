@@ -415,11 +415,11 @@ export default {
   }
   @keyframes car-drive {
     from {
-      right: -100%;
+      right: -90%;
     }
     to {
       right: -10%;
-      opacity: 1;
+      opacity: 0;
     }
   }
 }
