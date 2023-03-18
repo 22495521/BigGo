@@ -3,7 +3,9 @@
     <StepCirclelist :step="2"></StepCirclelist>
     <v-form ref="form" v-slot="{ errors }" @submit="onSubmit">
       <div class="mb-4">
-        <label for="email" class="form-label mb-1 fs-5">Email</label>
+        <label for="email" class="form-label mb-1 fs-5"
+          >Email<span style="color: red"> *</span></label
+        >
         <VField
           style="background-color: #f2f2f2"
           type="email"
@@ -16,7 +18,9 @@
         <error-message name="email" class="invalid-feedback"></error-message>
       </div>
       <div class="mb-4">
-        <label for="name" class="form-label mb-1 fs-5">姓名</label>
+        <label for="name" class="form-label mb-1 fs-5"
+          >姓名<span style="color: red"> *</span></label
+        >
         <VField
           style="background-color: #f2f2f2"
           type="text"
@@ -29,7 +33,9 @@
         <error-message name="姓名" class="invalid-feedback"></error-message>
       </div>
       <div class="mb-4">
-        <label for="電話" class="form-label mb-1 fs-5">電話</label>
+        <label for="電話" class="form-label mb-1 fs-5"
+          >電話<span style="color: red"> *</span></label
+        >
         <VField
           style="background-color: #f2f2f2"
           type="tel"
@@ -42,7 +48,9 @@
         <error-message name="電話" class="invalid-feedback"></error-message>
       </div>
       <div class="mb-4">
-        <label for="address" class="form-label mb-1 fs-5">地址</label>
+        <label for="address" class="form-label mb-1 fs-5"
+          >地址<span style="color: red"> *</span></label
+        >
         <VField
           name="地址"
           style="background-color: #f2f2f2"
