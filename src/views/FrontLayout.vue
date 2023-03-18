@@ -205,11 +205,11 @@ export default {
   background-image: linear-gradient(transparent 78%, #ffb7b7 50%);
 }
 
-/* @media (max-width: 769px) {
+@media (max-width: 769px) {
   .layoutmark-pen {
     padding-bottom: 0;
     padding-left: 0;
     background: none;
   }
-} */
+}
 </style>
