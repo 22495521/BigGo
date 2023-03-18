@@ -152,7 +152,7 @@ export default {
     background-color: #f6f6f6;
   }
   .cart-content-price p:first-of-type {
-    font-size: 26px;
+    font-size: 20px;
   }
   .cart-content-price p:nth-of-type(2) {
     font-size: 28px;
