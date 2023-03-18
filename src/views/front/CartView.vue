@@ -15,7 +15,10 @@
     <div v-else class="text-center step-btn">
       <p class="fw-bold fs-2 mb-4">無任何訂單</p>
       <Router-Link to="/CourseOverview"
-        ><button type="button" class="fw-bold rounded-pill fs-5 px-5 py-2">
+        ><button
+          type="button"
+          class="fw-bold rounded-pill fs-5 px-5 py-2 text-dark"
+        >
           來去逛逛
         </button></Router-Link
       >
