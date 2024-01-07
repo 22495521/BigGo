@@ -19,7 +19,7 @@
           type="button"
           class="fw-bold rounded-pill fs-5 px-5 py-2 text-dark"
         >
-          來去逛逛逛
+          來去逛逛
         </button></Router-Link
       >
       <div class="mt-5">
